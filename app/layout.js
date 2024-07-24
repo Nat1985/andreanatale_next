@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${kalnia.className} p-4 flex flex-col items-center mt-32`}>
-          <container className="w-full max-w-[800px] border">
+      <body className={`${kalnia.className} p-4 flex flex-col items-center`}>
+          <container className="w-full">
             <Header />
             {children}
           </container>
