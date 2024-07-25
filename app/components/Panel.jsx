@@ -1,10 +1,9 @@
 import React from 'react'
 
-function Panel({ index }) {
-    console.log({index})
+function Panel({ children }) {
     return (
-        <div className='bg-white w-full h-[400px] md:h-[600px] rounded'>
-            Panel
+        <div className={`bg-white w-full rounded p-4 flex flex-col justify-center`}>
+            { children }
         </div>
     )
 }
