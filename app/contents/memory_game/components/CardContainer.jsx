@@ -13,6 +13,7 @@ function CardContainer() {
     const handleShuffleCards = () => {
         let cards = [];
         for (let i = 0; i < 2; i++) {
+            console.log({i})
             cards.push(i);
             cards.push(i);
         }
@@ -87,9 +88,6 @@ function CardContainer() {
             }
         }
     }, [cardsCheck])
-    useEffect(() => {
-        console.log('destroyedCards.length: ', destroyedCards.length)
-    }, [destroyedCards])
 
     // Impedisco all'utente un ulteriore click nell'istante in cui viene effettuato il controllo su due carte appena scoperte
     const [isChecking, setIsChecking] = useState(false);
@@ -105,7 +103,7 @@ function CardContainer() {
 
             {/* Inizio gioco */}
             {
-                shuffledCards && destroyedCards.length < 2 &&
+                shuffledCards && shuffledCards.length === 4 && destroyedCards.length < 2 &&
                 <div className='grid grid-cols-2 gap-2'>
                     {
                         shuffledCards.map((element, index) => {
@@ -119,7 +117,7 @@ function CardContainer() {
             {
                 destroyedCards.length === 2 &&
                 <div className='h-full flex flex-col items-center justify-center gap-4 cursor-pointer' onClick={playAgain}>
-                    <img src='/icons/refresh.svg' width={48} height={48} />
+                    <img src='/icons/retry.png' width={48} height={48} />
                 </div>
             }
         </div >
