@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${kalnia.className} p-4 flex flex-col items-center`}>
-          <container className="w-full">
+          <div className="w-full">
             <Header />
             {children}
-          </container>
+          </div>
       </body>
     </html>
   );
