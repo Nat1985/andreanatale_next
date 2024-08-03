@@ -40,3 +40,7 @@ h5 {
     color: #262626;
     @apply leading-none
 }
+
+.get-leading {
+    line-height: normal;
+}

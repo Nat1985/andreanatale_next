@@ -29,7 +29,7 @@ function Card({ index, front, handleCheckCards, isShow, destroyedCards, isChecki
         <div className='w-fit h-fit shadow-lg rounded-xl'>
             {
                 !destroyedCards.includes(front) &&
-                    <div className={`w-[130px] h-[130px] overflow-hidden transform transition-transform duration-300 ease-in-out cursor-pointer`} onClick={handleClick}>
+                    <div className={`w-[130px] h-[130px] overflow-hidden transform transition-transform duration-300 ease-in-out cursor-pointer bg-slate-300 rounded-xl`} onClick={handleClick}>
                         {isShow && image && <Image src={image} alt={`Card image for ${front}`} width={130} height={130} />}
                     </div>
             }
