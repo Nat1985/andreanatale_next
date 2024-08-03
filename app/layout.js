@@ -2,7 +2,7 @@ import { Kalnia } from "next/font/google";
 import "./globals.css";
 import Header from "./components/navbar/Header";
 
-const kalnia = Kalnia({ subsets: ["latin"] });
+const kalnia = Kalnia({ subsets: ['latin'] });
 
 export const metadata = {
   title: "Andrea Natale",
