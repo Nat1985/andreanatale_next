@@ -1,8 +1,14 @@
-import { Kalnia } from "next/font/google";
+import { Ubuntu, Kalnia } from "next/font/google";
 import "./globals.css";
 import Header from "./components/navbar/Header";
 
-const kalnia = Kalnia({ subsets: ['latin'] });
+const ubuntu = Ubuntu({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin']
+});
+const kalnia = Kalnia({
+  subsets: ['latin']
+})
 
 export const metadata = {
   title: "Andrea Natale",
@@ -12,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${kalnia.className} p-4 flex flex-col items-center`}>
+      <body className={`${ubuntu.className} p-4 flex flex-col items-center`}>
           <div className="w-full">
             <Header />
             {children}
