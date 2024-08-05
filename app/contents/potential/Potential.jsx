@@ -5,7 +5,7 @@ const Potential = () => {
     return (
         <Panel>
             <h2 className="text-slate-500">
-                Il gaming B2B <b className="text-indigo-900">ha un immenso potenziale</b>
+                Il gaming B2B <b className="text-indigo-800">ha un immenso potenziale</b>
             </h2>
             <div className="mt-2">
                 <b>Ecco cosa si può fare con un <PinkSpan>videogioco</PinkSpan>:</b>

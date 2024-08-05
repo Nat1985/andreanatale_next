@@ -6,7 +6,7 @@ const Info = () => {
             <p className="text-pink-500">
                 Ciao, mi chiamo
             </p>
-            <h1 className="text-indigo-900">
+            <h1 className="text-indigo-800">
                 Andrea.
             </h1>
             <h5>
