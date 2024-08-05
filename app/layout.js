@@ -19,10 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${ubuntu.className} p-4 flex flex-col items-center`}>
-          <div className="w-full">
-            <Header />
+        <div className="w-full">
+          <Header />
             {children}
-          </div>
+        </div>
       </body>
     </html>
   );

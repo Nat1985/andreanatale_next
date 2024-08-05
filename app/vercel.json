@@ -1,0 +1,8 @@
+{
+    "rewrite" : [
+        {
+            "source": "api/rss",
+            "destination": "https://medium.com/feed/@andreanatale85"
+        }
+    ]
+}

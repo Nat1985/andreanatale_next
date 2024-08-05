@@ -1,24 +1,49 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import Burger from './Burger';
+import useMainStore from '@/app/zustand/mainStore';
+import useScrollPosition from '@/app/hooks/useScrollPosition';
+import Menu from './Menu';
 
 function Header() {
   const avatar = "/images/avatar.png";
-  return (
-    <div className='bg-white w-full flex justify-between rounded p-2'>
+  const yPosition = useScrollPosition();
+  const { isOpen, setBurger } = useMainStore();
 
-      {/* Title & Avatar */}
-      <div className="flex gap-2 items-center">
-        <div className='w-12 h-12 rounded-full overflow-hidden'>
-          <Image src={avatar} alt="Avatar" width={48} height={48} />
+  // Sretto isOpen su false solo una volta se avviene lo scroll verso il basso
+  const [isScrolledOnce, setIsScrolledOnce] = useState(false);
+  useEffect(() => {
+    if(yPosition > 80 && !isScrolledOnce) {
+      setBurger(false);
+      setIsScrolledOnce(true);
+    }
+    if(yPosition < 80 && isScrolledOnce) setIsScrolledOnce(false)
+  }, [yPosition])
+  return (
+    <div className={`flex flex-col gap-1 ${yPosition > 80 && 'fixed top-0 left-0 right-0 shadow-xl'} z-10`}>
+
+      {/* Primo blocco */}
+      <div className={`bg-white w-full flex justify-between p-2 ${yPosition < 80 && (isOpen ? 'rounded-t' : 'rounded')}`}>
+
+        {/* Title & Avatar */}
+        <div className="flex gap-2 items-center">
+          <div className='w-12 h-12 rounded-full overflow-hidden'>
+            <Image src={avatar} alt="Avatar" width={48} height={48} />
+          </div>
         </div>
+
+        {/* Burger menu */}
+        <Burger />
+
       </div>
 
-      {/* Burger menu */}
-
-      <Burger />
+      {/* Blocco menu */}
+      <Menu yPosition={yPosition} isOpen={isOpen} />
 
     </div>
+
   )
 }
 

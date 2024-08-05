@@ -13,7 +13,6 @@ function CardContainer() {
     const handleShuffleCards = () => {
         let cards = [];
         for (let i = 0; i < 2; i++) {
-            console.log({i})
             cards.push(i);
             cards.push(i);
         }
