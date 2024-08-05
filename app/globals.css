@@ -41,6 +41,13 @@ h5 {
     @apply leading-none
 }
 
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #262626;
+    @apply leading-none
+}
+
 .get-leading {
     line-height: normal;
 }
