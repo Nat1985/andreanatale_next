@@ -20,7 +20,6 @@ const Feed = ({feed, error, isLoading}) => {
                                 index={index}
                                 creator={element.creator}
                                 title={element.title}
-                                link={element.link}
                                 pubDate={element.pubDate}
                                 contentEncodedSnippet={element["content:encodedSnippet"]}
                                 categories={element.categories}
