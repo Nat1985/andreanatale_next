@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Card from './Card';
+import GameCopy from '@/app/components/GameCopy';
 
 function CardContainer() {
     // Lo stato di questo componente conterrà un'array di numeri da 0 a 5, ognuno ripetuto 2 volte
@@ -98,7 +99,7 @@ function CardContainer() {
     }
 
     return (
-        <div className={`flex flex-col items-center ${destroyedCards.length > 0 && 'h-[268px]'}`}>
+        <div className={`flex flex-col items-center ${destroyedCards.length > 0 && 'h-[297px]'}`}>
 
             {/* Inizio gioco */}
             {

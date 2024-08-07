@@ -1,17 +1,13 @@
-import Panel from "../../components/Panel";
+import IndigoSpan from "@/app/components/IndigoSpan";
+import Panel from "@/app/components/Panel";
+import PinkSpan from "@/app/components/PinkSpan";
 
 const Info = () => {
     return (
         <Panel>
-            <p className="text-pink-500">
-                Ciao, mi chiamo
+            <p>
+                Sviluppo <PinkSpan>gestionali aziendali</PinkSpan>, <IndigoSpan>SaaS</IndigoSpan>, <PinkSpan>e-commerce</PinkSpan> e <IndigoSpan>marketplace</IndigoSpan>, personalizzando completamente qualsiasi progetto, sia dal punto di vista strutturale che stilistico, soddisfacendo come meglio posso le direttive dei miei clienti
             </p>
-            <h1 className="text-indigo-800">
-                Andrea.
-            </h1>
-            <h5>
-                Sono un Creative Developer
-            </h5>
         </Panel>
     )
 }

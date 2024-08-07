@@ -1,3 +1,4 @@
+import Quote from "@/app/components/Quote";
 import Panel from "@/app/components/Panel"
 import PinkSpan from "@/app/components/PinkSpan";
 
@@ -8,7 +9,13 @@ const Potential = () => {
                 Il gaming B2B <b className="text-indigo-800">ha un immenso potenziale</b>
             </h2>
             <div className="mt-2">
-                <b>Ecco cosa si può fare con un <PinkSpan>videogioco</PinkSpan>:</b>
+                <div className="border p-2 my-8">
+                    <Quote author="Qualsiasi imprenditore">
+                        Cosa c'entrano i videogiochi con la mia azienda?
+                    </Quote>
+                </div>
+
+                <b>Ecco cosa si può fare con un <PinkSpan>videogioco aziendale:</PinkSpan></b>
                 <ul>
                     <li>Aumentare il coinvolgimento</li>
                     <li>Rafforzare la percezione del marchio</li>

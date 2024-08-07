@@ -48,6 +48,13 @@ h5 {
     @apply leading-none
 }
 
+h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #262626;
+    @apply leading-none
+}
+
 .get-leading {
     line-height: normal;
 }
