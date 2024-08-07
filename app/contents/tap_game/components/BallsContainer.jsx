@@ -5,9 +5,9 @@ import Ball from "./Ball";
 const ballsArray = [0, 1, 2, 3]
 const BallsContainer = () => {
     const [randomLight, setRandomLight] = useState(0);
-    const [win, setWin] = useState(false);
+    const [isWin, setIsWin] = useState(false);
     useEffect(() => {
-        if (win) {
+        if (isWin) {
             console.log('WIN!!!')
             return
         };
@@ -24,11 +24,17 @@ const BallsContainer = () => {
 
         // clean
         return () => clearInterval(interval)
-    }, [win, randomLight])
+    }, [isWin, randomLight])
     return (
         <div className="flex justify-evenly">
             {
-                ballsArray.map(element => (<Ball key={element} isLight={randomLight === element ? true : false} setWin={setWin} />))
+                !isWin && ballsArray.map(element => (<Ball key={element} isLight={randomLight === element ? true : false} setIsWin={setIsWin} />))
+            }
+            {
+                isWin &&
+                <div className='h-full flex flex-col items-center justify-center gap-4 cursor-pointer' onClick={() => setIsWin(false)}>
+                    <img src='/icons/retry.png' width={48} height={48} />
+                </div>
             }
         </div>
     )
