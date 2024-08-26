@@ -1,9 +1,10 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
+import useMainStore from "../zustand/mainStore";
 
 const parser = new Parser();
 
@@ -13,7 +14,7 @@ export default function Blog() {
     const { error, isLoading, feed, setError, setFeed } = useBlogStore();
 
     useEffect(() => {
-            fetchToRssProxy()
+        fetchToRssProxy()
     }, [])
 
     // Funzione che esegue la chiamata al proxy e poi parsifica i dati prima di salvarli in Zustand
@@ -32,7 +33,19 @@ export default function Blog() {
             setError(error)
         }
     }
-    
+
+    // Assegno un punto alla scoperta di questa sezione
+    // Controllo blogDiscoverd in Zustand e se non è true assegno un punto a 'score' e imposto blogDiscovered true
+    const initialEffect = useRef(true);
+    const { addPoints, blogDiscovered, setBlogDiscovered } = useMainStore();
+    useEffect(() => {
+        if (initialEffect.current && blogDiscovered === false) {
+            addPoints(1);
+            setBlogDiscovered();
+            initialEffect.current = false;
+        }
+    }, [blogDiscovered]);
+
     return (
         <main className="mt-4 flex flex-col gap-4">
             <Feed feed={feed} error={error} isLoading={isLoading} />

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const BlogCard = ({ index, creator, title, pubDate, contentEncodedSnippet, categories }) => {
+const BlogCard = ({ index, creator, title, link, pubDate, contentEncodedSnippet, categories }) => {
     const [textFirstWords, setTextFirstWords] = useState(null)
     useEffect(() => {
         if (contentEncodedSnippet) {
@@ -11,7 +11,7 @@ const BlogCard = ({ index, creator, title, pubDate, contentEncodedSnippet, categ
         }
     }, [contentEncodedSnippet])
     return (
-        <Link href={`/blog/post/${index}`}><div className={`flex flex-col gap-2 border-2 ${index % 2 === 0 ? 'border-indigo-800' : 'border-pink-500'} rounded p-4 cursor-pointer md:hover:bg-slate-200`}>
+        <Link href={link} target="_blank"><div className={`flex flex-col gap-2 border-2 ${index % 2 === 0 ? 'border-indigo-800' : 'border-pink-500'} rounded p-4 cursor-pointer md:hover:bg-slate-200`}>
             <h3 className={`md:hidden ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h3>
             <h2 className={`hidden md:block xl:hidden ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h2>
             <h1 className={`hidden xl:block ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h1>

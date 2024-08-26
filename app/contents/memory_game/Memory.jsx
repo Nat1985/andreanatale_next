@@ -5,7 +5,6 @@ import CardContainer from "./components/CardContainer";
 const Memory = () => {
     return (
         <Panel>
-            <GameCopy>Prima di proseguire, risolvi questo memory</GameCopy>
             <CardContainer />
         </Panel>
     )

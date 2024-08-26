@@ -8,7 +8,24 @@ const useMainStore = create(devtools((set) => ({
 
     // Scroll position state
     yPosition: 0,
-    setYPosition: (position) => set({ yPosition: position })
+    setYPosition: (position) => set({ yPosition: position }),
+
+    // User Score
+    totalGames: 4,
+    score: 0,
+    blogDiscovered: false,
+    isTap: false,
+    isMemory: false,
+    isDrag: false,
+    addPoints: (points) => set((state) => ({ score: state.score + points })),
+    setBlogDiscovered: () => set({ blogDiscovered: true }),
+    setIsTap: () => set({ isTap: true }),
+    setIsMemory: () => set({ isMemory: true }),
+    setIsDrag: () => set({ isDrag: true }),
 })))
+
+useMainStore.subscribe((state) => {
+    // Possibilità di eseguire codice ogni volta che i valori degli stati cambiano
+})
 
 export default useMainStore;

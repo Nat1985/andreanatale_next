@@ -1,8 +1,10 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import Card from './Card';
+import GameCard from './GameCard';
 import GameCopy from '@/app/components/GameCopy';
+import useMainStore from '@/app/zustand/mainStore';
+import Image from 'next/image';
 
 function CardContainer() {
     // Lo stato di questo componente conterrà un'array di numeri da 0 a 5, ognuno ripetuto 2 volte
@@ -98,26 +100,40 @@ function CardContainer() {
         handleShuffleCards();
     }
 
+    // Setto l'assegnazione del punto aggiuntivo a Zustand alla vittoria
+    const { addPoints, isMemory, setIsMemory } = useMainStore();
+    useEffect(() => {
+        if (destroyedCards.length === 2 && !isMemory) {
+                addPoints(1);
+                setIsMemory();
+
+        }
+    }, [destroyedCards]);
+
     return (
         <div className={`flex flex-col items-center ${destroyedCards.length > 0 && 'h-[297px]'}`}>
 
             {/* Inizio gioco */}
             {
-                shuffledCards && shuffledCards.length === 4 && destroyedCards.length < 2 &&
-                <div className='grid grid-cols-2 gap-2'>
-                    {
-                        shuffledCards.map((element, index) => {
-                            return <Card key={index} index={index} front={element} handleCheckCards={handleCheckCards} isShow={index === cardsCheck.first.index || index === cardsCheck.second.index ? true : false} destroyedCards={destroyedCards} isChecking={isChecking} />
-                        })
-                    }
+                !isMemory && shuffledCards && shuffledCards.length === 4 && destroyedCards.length < 2 &&
+                <div>
+                    <GameCopy>Risolvi il memory</GameCopy>
+                    <div className='grid grid-cols-2 gap-2'>
+                        {
+                            shuffledCards.map((element, index) => {
+                                return <GameCard key={index} index={index} front={element} handleCheckCards={handleCheckCards} isShow={index === cardsCheck.first.index || index === cardsCheck.second.index ? true : false} destroyedCards={destroyedCards} isChecking={isChecking} />
+                            })
+                        }
+                    </div>
                 </div>
+
             }
 
             {/* Fine gioco */}
             {
-                destroyedCards.length === 2 &&
-                <div className='h-full flex flex-col items-center justify-center gap-4 cursor-pointer' onClick={playAgain}>
-                    <img src='/icons/retry.png' width={48} height={48} />
+                isMemory &&
+                <div className='h-full flex flex-col items-center justify-center gap-4'>
+                    <Image src='/icons/full_badge.png' width={48} height={48} />
                 </div>
             }
         </div >

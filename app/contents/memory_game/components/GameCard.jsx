@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 
-function Card({ index, front, handleCheckCards, isShow, destroyedCards, isChecking }) {
+function GameCard({ index, front, handleCheckCards, isShow, destroyedCards, isChecking }) {
 
     // Setto i percorsi delle immagini in un array (da cui andrà a pescare front)
     const cardImages = [
@@ -28,7 +28,7 @@ function Card({ index, front, handleCheckCards, isShow, destroyedCards, isChecki
     return (
         <div className='w-fit h-fit shadow-lg rounded-xl'>
             {
-                !destroyedCards.includes(front) &&
+                destroyedCards && !destroyedCards.includes(front) &&
                     <div className={`w-[130px] h-[130px] overflow-hidden transform transition-transform duration-300 ease-in-out cursor-pointer bg-slate-300 rounded-xl`} onClick={handleClick}>
                         {isShow && image && <Image src={image} alt={`Card image for ${front}`} width={130} height={130} />}
                     </div>
@@ -39,4 +39,4 @@ function Card({ index, front, handleCheckCards, isShow, destroyedCards, isChecki
     )
 }
 
-export default Card
+export default GameCard

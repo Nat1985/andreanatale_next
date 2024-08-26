@@ -7,10 +7,10 @@ function Menu({ yPosition, isOpen }) {
             label: "HOME",
             link: "/"
         },
-        {
+        /* {
             label: "ABOUT",
             link: "/about"
-        },
+        }, */
         {
             label: "BLOG",
             link: "/blog"
