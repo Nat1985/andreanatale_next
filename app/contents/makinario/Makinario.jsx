@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Panel from "@/app/components/Panel";
 
-const Advergames = () => {
+const Makinario = () => {
     return (
         <Panel>
             <h3>Sviluppo <span className="text-pink-500">ADVERGAMES</span></h3>
@@ -19,4 +19,4 @@ const Advergames = () => {
     )
 }
 
-export default Advergames;
+export default Makinario;

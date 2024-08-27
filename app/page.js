@@ -10,8 +10,7 @@ import YoutubeLink from "./contents/youtube/YoutubeLink";
 import Instagram from "./contents/instagram/Instagram";
 import Email from "./contents/email/Email";
 import DragGame from "./contents/dragGame/DragGame";
-import Advergames from "./contents/advergames/Advergames";
-/* import TestSection from "./contents/test_section/TestSection"; */
+import Makinario from "./contents/makinario/Makinario";
 
 export default function Home() {
     return (
@@ -24,13 +23,12 @@ export default function Home() {
             <Memory />
             <Info />
             <DragGame />
-            <Advergames />
+            <Makinario />
             {/* <TryVideogame /> */}
             <Instagram />
             <LinkedinLink />
             <YoutubeLink />
             <Email />
-            {/* <TestSection /> */}
         </main>
     );
 }
