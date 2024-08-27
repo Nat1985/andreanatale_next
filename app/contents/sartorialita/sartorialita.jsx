@@ -46,7 +46,7 @@ const Sartorialita = () => {
     }, [isWin])
     return (
         <Panel>
-            <div className="h-[200px] flex flex-col justify-center">
+            <div className="h-[293px] flex flex-col justify-center">
                 {
                     !isDrag &&
                     <GameCopy>Riordina i tasselli</GameCopy>

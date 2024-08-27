@@ -1,6 +1,8 @@
 import Quote from "@/app/components/Quote";
 import Panel from "@/app/components/Panel"
 import PinkSpan from "@/app/components/PinkSpan";
+import Link from "next/link";
+import IndigoSpan from "@/app/components/IndigoSpan";
 
 const Potential = () => {
     return (
@@ -8,25 +10,18 @@ const Potential = () => {
             <h2 className="text-slate-500">
                 Il gaming B2B <b className="text-indigo-800">ha un immenso potenziale</b>
             </h2>
-            <div className="mt-2">
-                <div className="border p-2 my-8">
-                    <Quote author="Qualsiasi imprenditore">
-                        Cosa c'entrano i videogiochi con la mia azienda?
-                    </Quote>
-                </div>
+            <div className="mt-8">
 
-                <b>Ecco cosa si può fare con un <PinkSpan>videogioco aziendale:</PinkSpan></b>
-                <ul>
-                    <li>Aumentare il coinvolgimento</li>
+                <b>Con un <PinkSpan>videogioco aziendale</PinkSpan> si può</b>
+                <ul className="list-disc ml-4">
                     <li>Rafforzare la percezione del marchio</li>
-                    <li>Fidelizzare la clientela</li>
-                    <li>Attrarre nuovi clienti</li>
-                    <li>Promuovere un nuovo prodotto</li>
+                    <li>Fidelizzare i clienti</li>
+                    <li>Attrarrne di nuovi</li>
+                    <li>Lanciare un nuovo prodotto</li>
                     <li>Raccontare i propri servizi</li>
                     <li>Fare lead generation</li>
                     <li>Aumentare le conversioni</li>
-                    <li>Educare e formare</li>
-                    <li>Sensibilizzare le persone</li>
+                    <li>Educare, formare e sensibilizzare</li>
                     <li>Fare team building aziendale</li>
                     <li>Generare hype per un evento</li>
                     <li>Intrattenere e divertire</li>
