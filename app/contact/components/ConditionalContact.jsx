@@ -4,6 +4,7 @@ import Panel from "@/app/components/Panel";
 import useMainStore from "@/app/zustand/mainStore";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 
 const ConditionalContact = () => {
@@ -29,8 +30,8 @@ const ConditionalContact = () => {
                             <Image src="/icons/full_badge.png" width={48} height={48} />
                         </div>
                         <p>Spero di averti coinvolto abbastanza da farti percepire la potenza della gamification nel catturare l'attenzione delgi utenti.</p>
-                        <p>Ecco di seguito i miei contatti. Facendo divertire gli utenti si può raggiungere qualsiasi obiettivo. Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta) scrivimi!</p>
-
+                        <p>Ecco di seguito i miei contatti. Facendo divertire gli utenti si può raggiungere qualsiasi obiettivo. Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta per la tua azienda) scrivimi!</p>
+                        <ContactForm />
                     </div>
 
                 ) : (

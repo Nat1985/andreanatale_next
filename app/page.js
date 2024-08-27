@@ -1,17 +1,16 @@
 import Advergames from "./contents/advergames/Advergames";
-import Info from "./contents/sartorialita/sartorialita";
 import Memory from "./contents/memory_game/Memory";
-import Mern from "./contents/info/Info";
+import Info from "./contents/info/Info";
 import Potential from "./contents/potential/Potential";
 import Stack from "./contents/stack/Stack";
 import VideogameDeveloper from "./contents/videogameDeveloper/VideogameDeveloper";
 import WhatAdvergames from "./contents/WhatAdvergames/WhatAdvergames";
 import Who from "./contents/who/Who";
-import Sartorialita from "./contents/sartorialita/sartorialita";
+import Sartorialita from "./contents/sartorialita/Sartorialita";
 import TapGame from "./contents/tap_game/TapGame";
-import TestSection from "./contents/test_section/TestSection";
 import LinkedinLink from "./contents/linkedin/LinkedinLink";
 import YoutubeLink from "./contents/youtube/YoutubeLink";
+/* import TestSection from "./contents/test_section/TestSection"; */
 
 export default function Home() {
     return (
@@ -22,7 +21,7 @@ export default function Home() {
             <TapGame />
             <Potential />
             <Memory />
-            <Mern />
+            <Info />
             <Sartorialita />
             <Advergames />
             <WhatAdvergames />
