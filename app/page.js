@@ -1,4 +1,3 @@
-import Advergames from "./contents/advergames/Advergames";
 import Memory from "./contents/memory_game/Memory";
 import Info from "./contents/info/Info";
 import Potential from "./contents/potential/Potential";
@@ -11,6 +10,7 @@ import YoutubeLink from "./contents/youtube/YoutubeLink";
 import Instagram from "./contents/instagram/Instagram";
 import Email from "./contents/email/Email";
 import DragGame from "./contents/dragGame/DragGame";
+import Advergames from "./contents/advergames/Advergames";
 /* import TestSection from "./contents/test_section/TestSection"; */
 
 export default function Home() {
