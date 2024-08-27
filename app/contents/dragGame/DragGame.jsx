@@ -10,7 +10,7 @@ import Image from "next/image";
 import GameCopy from "@/app/components/GameCopy";
 import useMainStore from "@/app/zustand/mainStore";
 
-const Sartorialita = () => {
+const DragGame = () => {
 
     const [items, setItems] = useState([
         { id: 3, value: <DragCard text="…su misura per il cliente.”" /> },
@@ -83,4 +83,4 @@ const Sartorialita = () => {
     )
 }
 
-export default Sartorialita;
+export default DragGame;

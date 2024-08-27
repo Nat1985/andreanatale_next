@@ -5,12 +5,12 @@ import Potential from "./contents/potential/Potential";
 import Stack from "./contents/stack/Stack";
 import TryVideogame from "./contents/tryVideogames/TryVideogames";
 import Who from "./contents/who/Who";
-import Sartorialita from "./contents/sartorialita/Sartorialita";
 import TapGame from "./contents/tap_game/TapGame";
 import LinkedinLink from "./contents/linkedin/LinkedinLink";
 import YoutubeLink from "./contents/youtube/YoutubeLink";
 import Instagram from "./contents/instagram/Instagram";
 import Email from "./contents/email/Email";
+import DragGame from "./contents/dragGame/DragGame";
 /* import TestSection from "./contents/test_section/TestSection"; */
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
             <Potential />
             <Memory />
             <Info />
-            <Sartorialita />
+            <DragGame />
             <Advergames />
             {/* <TryVideogame /> */}
             <Instagram />
