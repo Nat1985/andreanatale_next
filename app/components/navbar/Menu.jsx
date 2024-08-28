@@ -16,7 +16,7 @@ function Menu({ yPosition, isOpen }) {
             link: "/blog"
         },
         {
-            label: "CONTACT",
+            label: "CONTATTI",
             link: "/contact"
         }
     ]
