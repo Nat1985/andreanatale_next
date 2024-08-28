@@ -17,7 +17,7 @@ export default function Home() {
         <main className="mt-4 flex flex-col gap-4 md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-6">
             {/* Info */}
             <Who />
-            <Stack />
+            {/* <Stack /> */}
             <TapGame />
             <Potential />
             <Memory />

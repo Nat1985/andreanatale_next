@@ -6,7 +6,7 @@ const Info = () => {
     return (
         <Panel>
             <p>
-                Sviluppo <PinkSpan>gestionali aziendali</PinkSpan>, <IndigoSpan>SaaS</IndigoSpan>, <PinkSpan>e-commerce</PinkSpan> e <IndigoSpan>marketplace</IndigoSpan>, personalizzando completamente qualsiasi progetto, sia dal punto di vista strutturale che stilistico, soddisfacendo come meglio posso le direttive dei miei clienti
+                Sviluppo <PinkSpan>e-commerce</PinkSpan>, <IndigoSpan>gestionali aziendali</IndigoSpan>, <PinkSpan>Saas</PinkSpan> e <IndigoSpan>marketplace</IndigoSpan>, <b>personalizzando completamente qualsiasi progetto</b>, sia dal punto di vista strutturale che stilistico, soddisfacendo come meglio posso le direttive dei miei clienti
             </p>
         </Panel>
     )

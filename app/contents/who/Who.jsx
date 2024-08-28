@@ -1,21 +1,26 @@
 import PinkSpan from "@/app/components/PinkSpan";
 import Panel from "../../components/Panel";
+import IndigoSpan from "@/app/components/IndigoSpan";
 
 const Who = () => {
     return (
         <Panel>
-            <p className="text-pink-500">
+            <h5 className="text-pink-500">
                 Ciao, mi chiamo
-            </p>
+            </h5>
             <h1 className="text-indigo-800">
                 Andrea.
             </h1>
             <h5>
                 Sono un <PinkSpan>Creative Developer</PinkSpan>
             </h5>
-            <h5>
-                Sviluppo applicativi web e videogiochi B2B.
-            </h5>
+            <p className="mt-4">
+                Sviluppo <b>soluzioni web creative</b>, dal forte impatto stilistico e ludico, <IndigoSpan>piattaforme gamificate</IndigoSpan> e <IndigoSpan>videogames</IndigoSpan>.
+            </p>
+
+            <p className="mt-4">
+                Sfrutto <b>storytelling</b> e <b>gamification</b> per aiutarti a raggiungere i tuoi obiettivi di business,
+            </p>
         </Panel>
     )
 }

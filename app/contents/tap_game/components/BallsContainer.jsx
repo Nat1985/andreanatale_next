@@ -42,7 +42,7 @@ const BallsContainer = () => {
 
     return (
         <div className="h-[100px] flex flex-col justify-center">
-            {!isTap && <GameCopy>Acchiappa la pallina rosa</GameCopy>}
+            {!isTap && <GameCopy>Forza, tocca la pallina rosa per guadagnare la prima medaglietta!</GameCopy>}
             <div className="flex justify-evenly">
                 {
                     !isTap &&

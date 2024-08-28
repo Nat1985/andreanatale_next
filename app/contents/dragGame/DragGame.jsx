@@ -49,7 +49,7 @@ const DragGame = () => {
             <div className="h-[293px] flex flex-col justify-center">
                 {
                     !isDrag &&
-                    <GameCopy>Riordina i tasselli</GameCopy>
+                    <GameCopy>Riordina i tasselli trascinandoli</GameCopy>
                 }
                 {
                     !isDrag && items &&

@@ -104,20 +104,22 @@ function CardContainer() {
     const { addPoints, isMemory, setIsMemory } = useMainStore();
     useEffect(() => {
         if (destroyedCards.length === 2 && !isMemory) {
-                addPoints(1);
-                setIsMemory();
+            addPoints(1);
+            setIsMemory();
 
         }
     }, [destroyedCards]);
 
     return (
-        <div className={`flex flex-col items-center ${destroyedCards.length > 0 && 'h-[297px]'}`}>
+        <div className={`flex flex-col items-center ${destroyedCards.length > 0 && 'h-[310px]'}`}>
 
             {/* Inizio gioco */}
             {
                 !isMemory && shuffledCards && shuffledCards.length === 4 && destroyedCards.length < 2 &&
                 <div>
-                    <GameCopy>Risolvi il memory</GameCopy>
+                    <div className='max-w-[260px]'>
+                        <GameCopy>Risolvi il memory se vuoi conquistare un'altra medaglietta!</GameCopy>
+                    </div>
                     <div className='grid grid-cols-2 gap-2'>
                         {
                             shuffledCards.map((element, index) => {

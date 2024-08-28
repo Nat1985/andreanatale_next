@@ -8,24 +8,23 @@ const Potential = () => {
     return (
         <Panel>
             <h2 className="text-slate-500">
-                Il gaming B2B <b className="text-indigo-800">ha un immenso potenziale</b>
+                Il gaming B2B <b className="text-indigo-800">ha un potenziale immenso</b>
             </h2>
-            <div className="mt-8">
-
-                <b>Con un <PinkSpan>videogioco aziendale</PinkSpan> si può</b>
-                <ul className="list-disc ml-4">
-                    <li>Rafforzare la percezione del marchio</li>
-                    <li>Fidelizzare i clienti</li>
-                    <li>Attrarrne di nuovi</li>
-                    <li>Lanciare un nuovo prodotto</li>
-                    <li>Raccontare i propri servizi</li>
-                    <li>Fare lead generation</li>
-                    <li>Aumentare le conversioni</li>
-                    <li>Educare, formare e sensibilizzare</li>
-                    <li>Fare team building aziendale</li>
-                    <li>Generare hype per un evento</li>
-                    <li>Intrattenere e divertire</li>
-                    <li>Fare i fighi coi competitor :)</li>
+            <div className="mt-8 flex flex-col gap-4">
+                <p>Con <b>videogiochi</b> e <b>piattaforme aziendali gamificate</b> si può:</p>
+                <ul className="text-xl flex gap-2 flex-wrap leading-none">
+                    <li className="p-1 bg-pink-500 rounded text-white">Rafforzare la percezione del marchio</li>
+                    <li className="p-1 bg-indigo-800 rounded text-white">Fidelizzare i clienti</li>
+                    <li className="p-1 bg-slate-500 rounded text-white">Attrarne di nuovi</li>
+                    <li className="p-1 bg-indigo-800 rounded text-white">Lanciare un nuovo prodotto</li>
+                    <li className="p-1 bg-pink-500 rounded text-white">Raccontare i propri servizi</li>
+                    <li className="p-1 bg-indigo-800 rounded text-white">Fare lead generation</li>
+                    <li className="p-1 bg-slate-500 rounded text-white">Aumentare le conversioni</li>
+                    <li className="p-1 bg-indigo-800 rounded text-white">Educare, formare e sensibilizzare</li>
+                    <li className="p-1 bg-pink-500 rounded text-white">Fare team building aziendale</li>
+                    <li className="p-1 bg-indigo-800 rounded text-white">Generare hype per un evento</li>
+                    <li className="p-1 bg-slate-500 rounded text-white">Intrattenere e divertire</li>
+                    <li className="p-1 bg-pink-500 rounded text-white">Fare i fighi coi competitor :)</li>
                 </ul>
             </div>
         </Panel>
