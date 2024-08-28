@@ -15,7 +15,7 @@ const Who = () => {
                 Sono un <PinkSpan>Creative Developer</PinkSpan>
             </h5>
             <p className="mt-4">
-                Sviluppo <b>soluzioni web creative</b>, dal forte impatto stilistico e ludico, <IndigoSpan>piattaforme gamificate</IndigoSpan> e <IndigoSpan>videogames</IndigoSpan>.
+                Sviluppo <b>soluzioni web creative</b> dal forte impatto stilistico e ludico, <i>piattaforme gamificate</i> e <i>videogames</i>.
             </p>
 
             <p className="mt-4">
