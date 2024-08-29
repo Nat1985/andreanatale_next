@@ -19,7 +19,7 @@ const Who = () => {
             </p>
 
             <p className="mt-4">
-                Sfrutto <b>storytelling</b> e <b>gamification</b> per aiutarti a raggiungere i tuoi obiettivi di business,
+                Sfrutto <b>storytelling</b>, <b>gamification</b> e <b>videogiochi</b> per aiutarti a raggiungere i tuoi obiettivi di business,
             </p>
         </Panel>
     )
