@@ -30,7 +30,6 @@ export default function Home() {
     return (
         <main className="mt-4 flex flex-col gap-4 lg:gap-0">
             {
-                // eslint-disable-next-line react/jsx-key
                 componentsList && componentsList.map((element, index) => (
                     <div key={index}>{element}</div>
                 ))
