@@ -1,5 +1,3 @@
-"use client"
-
 import Memory from "./contents/memory_game/Memory";
 import Info from "./contents/info/Info";
 import Potential from "./contents/potential/Potential";
