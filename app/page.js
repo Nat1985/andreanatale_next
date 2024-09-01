@@ -36,20 +36,6 @@ export default function Home() {
                     return <div key={index} >{element}</div>
                 })
             }
-            {/* Info */}
-            <Who />
-            {/* <Stack /> */}
-            <TapGame />
-            <Potential />
-            <Memory />
-            <Info />
-            <DragGame />
-            <Makinario />
-            {/* <TryVideogame /> */}
-            <Instagram />
-            <LinkedinLink />
-            <YoutubeLink />
-            <Email />
         </main>
     );
 }
