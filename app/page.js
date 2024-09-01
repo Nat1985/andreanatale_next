@@ -15,20 +15,21 @@ import DragGame from "./contents/dragGame/DragGame";
 import Makinario from "./contents/makinario/Makinario";
 import { useState } from "react";
 
+const componentsList = [
+    <Who key={1} isBlack />,
+    <TapGame key={2} />,
+    <Potential key={3} isBlack />,
+    <Memory key={4} />,
+    <Info key={5} isBlack />,
+    <DragGame key={6} />,
+    <Makinario key={7} isBlack />,
+    <Instagram key={8} />,
+    <LinkedinLink key={9} isBlack />,
+    <YoutubeLink key={10} />,
+    <Email isBlack />
+]
+
 export default function Home() {
-    const [componentsList] = useState([
-        <Who key={1} isBlack />,
-        <TapGame key={2} />,
-        <Potential key={3} isBlack />,
-        <Memory key={4} />,
-        <Info key={5} isBlack />,
-        <DragGame key={6} />,
-        <Makinario key={7} isBlack />,
-        <Instagram key={8} />,
-        <LinkedinLink key={9} isBlack />,
-        <YoutubeLink key={10} />,
-        <Email isBlack />
-    ])
     return (
         <main className="mt-4 flex flex-col gap-4 lg:gap-0">
             {
