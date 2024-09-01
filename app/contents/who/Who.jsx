@@ -2,9 +2,9 @@ import PinkSpan from "@/app/components/PinkSpan";
 import Panel from "../../components/Panel";
 import IndigoSpan from "@/app/components/IndigoSpan";
 
-const Who = () => {
+const Who = ({isBlack}) => {
     return (
-        <Panel>
+        <Panel isBlack>
             <h5 className="text-pink-500">
                 Ciao, mi chiamo
             </h5>

@@ -4,9 +4,9 @@ import PinkSpan from "@/app/components/PinkSpan";
 import Link from "next/link";
 import IndigoSpan from "@/app/components/IndigoSpan";
 
-const Potential = () => {
+const Potential = ({ isBlack }) => {
     return (
-        <Panel>
+        <Panel isBlack>
             <h2 className="text-slate-500">
                 Il gaming B2B <b className="text-indigo-800">ha un potenziale immenso</b>
             </h2>

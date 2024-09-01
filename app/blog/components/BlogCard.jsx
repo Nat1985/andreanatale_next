@@ -2,22 +2,29 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { getFormattedDate } from "@/app/utils/getFormattedDate";
 
 const BlogCard = ({ index, creator, title, link, pubDate, contentEncodedSnippet, categories }) => {
     const [textFirstWords, setTextFirstWords] = useState(null)
     useEffect(() => {
         if (contentEncodedSnippet) {
-            setTextFirstWords(contentEncodedSnippet.slice(0, 500));
+            setTextFirstWords(contentEncodedSnippet.slice(0, 200));
         }
     }, [contentEncodedSnippet])
+
+    const [formattedDate, setformattedDate] = useState(null);
+    useEffect(() => {
+        if (pubDate) {
+            setformattedDate(getFormattedDate(pubDate))
+        }
+    }, [pubDate])
     return (
-        <Link href={link} target="_blank"><div className={`flex flex-col gap-2 border-2 ${index % 2 === 0 ? 'border-indigo-800' : 'border-pink-500'} rounded p-4 cursor-pointer md:hover:bg-slate-200`}>
+        <Link href={link} target="_blank"><div className={`w-full flex flex-col items-start gap-2 border-2 ${index % 2 === 0 ? 'border-indigo-800' : 'border-pink-500'} rounded p-4 cursor-pointer md:hover:bg-slate-200`}>
             <h3 className={`md:hidden ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h3>
-            <h2 className={`hidden md:block xl:hidden ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h2>
-            <h1 className={`hidden xl:block ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h1>
-            <div className="w-full truncate italic">"{textFirstWords}</div>
+            <h2 className={`hidden md:block ${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{title}</h2>
+            <div className="w-full truncate italic text-wrap text-start">"{textFirstWords}...</div>
             <h5>Scritto da {creator}</h5>
-            <div className="text-[8pt] mt-0">il {pubDate}</div>
+            {formattedDate && <div className="text-[8pt] mt-0">il {formattedDate}</div>}
             <div className="flex gap-1 items-center text-xs">
                 <ul className="flex items-center flex-wrap gap-1">
                     <li>Categorie:</li>

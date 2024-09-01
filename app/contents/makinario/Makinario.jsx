@@ -4,9 +4,9 @@ import Link from "next/link";
 
 import Panel from "@/app/components/Panel";
 
-const Makinario = () => {
+const Makinario = ({ isBlack }) => {
     return (
-        <Panel>
+        <Panel isBlack>
             <h3>Sviluppo <span className="text-pink-500">ADVERGAMES</span></h3>
             <div className="mt-2">
                 Fra i videogiochi B2B più in voga ci sono gli <b>advergames</b> <i>(advertising/videogame)</i>, videogiochi a scopo di marketing: un metodo potente e innovativo per catturare l&apos;<span className="text-pink-500"><i>attenzione</i></span> degli utenti e guidarli alla scoperta del tuo <span className="text-pink-500"><i>brand</i></span>.

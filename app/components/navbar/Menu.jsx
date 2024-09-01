@@ -21,7 +21,7 @@ function Menu({ yPosition, isOpen }) {
         }
     ]
     return (
-        <div className={`bg-white w-full flex justify-evenly lg:justify-start gap-2 lg:gap-8 p-2 ${yPosition < 80 && 'rounded-b'} ${!isOpen && 'hidden'}`}>
+        <div className={`bg-white w-full flex justify-evenly lg:justify-center lg:gap-8 p-2 ${yPosition < 80 && 'rounded-b'} ${!isOpen && 'hidden'}`}>
             {
                 links.length > 0 && links.map((element, index) => {
                     return <Link key={index} href={element.link}><div className='text-indigo-800 hover:text-pink-500 font-bold'>{element.label}</div></Link>

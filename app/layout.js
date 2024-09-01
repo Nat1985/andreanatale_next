@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.className} p-4 flex flex-col items-center`}>
+      <body className={`${ubuntu.className} p-4 md:p-0 flex flex-col items-center lg:text-xl`}>
         <div className="w-full">
           <Header />
             {children}
