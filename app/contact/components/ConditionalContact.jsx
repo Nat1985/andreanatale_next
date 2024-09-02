@@ -35,8 +35,8 @@ const ConditionalContact = () => {
 
                 ) : (
                     <div className="flex flex-col gap-8 items-center text-center pt-16">
-                        <Image src="/icons/stop.png" width={256} height={256} />
-                        <h2 className="text-pink-500">Non puoi ancora contattarmi</h2>
+                        <Image src="/icons/stop.png" width={128} height={128} />
+                        <h3 className="text-pink-500">Non puoi ancora contattarmi</h3>
                         <h5>Non hai collezionato abbastanza medagliette!</h5>
                         <Image src="/icons/full_badge.png" width={48} height={48} />
                         <p>Torna indietro, risolvi i mini-game e naviga il sito per ottenerle. Poi torna qui :)</p>
