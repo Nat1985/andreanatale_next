@@ -27,7 +27,7 @@ function Header() {
     <div className={`flex flex-col gap-1 ${yPosition > 80 && 'fixed top-0 left-0 right-0 shadow-xl'} z-40`}>
 
       {/* Primo blocco */}
-      <div className={`bg-white w-full flex justify-between p-2 ${yPosition < 80 && (isOpen ? 'rounded-t' : 'rounded')} md:rounded-none`}>
+      <div className={`bg-white w-full flex justify-between md:justify-center p-2 ${yPosition < 80 && (isOpen ? 'rounded-t' : 'rounded')} md:rounded-none`}>
 
         {/* Questo div sposta l'avatar e score in centro da lg in su */}
         <div className='hidden lg:block'>
@@ -48,7 +48,7 @@ function Header() {
 
 
         {/* Burger menu */}
-        <Burger />
+        <div className='md:hidden'><Burger /></div>
 
       </div>
 
