@@ -4,6 +4,7 @@ import Ball from "./Ball";
 import GameCopy from "@/app/components/GameCopy";
 import useMainStore from "@/app/zustand/mainStore";
 import Image from "next/image";
+import useWindowWidth from "@/app/hooks/useWindowWidth";
 
 const BallsContainer = () => {
     const renderBalls = (amount) => {
@@ -14,6 +15,8 @@ const BallsContainer = () => {
         return balls;
     }
 
+    const windowWidth = useWindowWidth();
+    const timing = windowWidth > 768 ? 800 : 500
     const [randomLight, setRandomLight] = useState(0);
     // Aggiorno lo score in Zustand alla vittoria
     const [isWin, setIsWin] = useState(false);
@@ -32,7 +35,7 @@ const BallsContainer = () => {
                 }
                 setRandomLight(randomNumber);
                 previousRandom === randomNumber;
-            }, 500)
+            }, timing)
 
             // clean
             return () => clearInterval(interval)
