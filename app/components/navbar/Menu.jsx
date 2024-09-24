@@ -16,6 +16,10 @@ function Menu({ yPosition, isOpen }) {
             link: "/blog"
         },
         {
+            label: 'VIDEOGAMES',
+            link: '/videogames'
+        },
+        {
             label: "CONTATTI",
             link: "/contact"
         }

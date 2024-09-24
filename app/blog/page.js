@@ -36,15 +36,16 @@ export default function Blog() {
 
     // Assegno un punto alla scoperta di questa sezione
     // Controllo blogDiscoverd in Zustand e se non è true assegno un punto a 'score' e imposto blogDiscovered true
+    // useRef per far eseguire la condizione soltanto la prima volta che il componente viene montato e non sempre
     const initialEffect = useRef(true);
-    const { addPoints, blogDiscovered, setBlogDiscovered } = useMainStore();
+    const { addPoints, isBlogDiscovered, setBlogDiscovered } = useMainStore();
     useEffect(() => {
-        if (initialEffect.current && blogDiscovered === false) {
+        if (initialEffect.current && isBlogDiscovered === false) {
             addPoints(1);
             setBlogDiscovered();
             initialEffect.current = false;
         }
-    }, [blogDiscovered]);
+    }, [isBlogDiscovered]);
 
     return (
         <main className="mt-4 flex flex-col gap-4">

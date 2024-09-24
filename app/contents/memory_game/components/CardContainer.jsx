@@ -106,7 +106,6 @@ function CardContainer() {
         if (destroyedCards.length === 2 && !isMemory) {
             addPoints(1);
             setIsMemory();
-
         }
     }, [destroyedCards]);
 
