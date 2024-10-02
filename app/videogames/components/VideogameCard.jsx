@@ -14,7 +14,9 @@ const VideogameCard = ({ title, text, image, gameLink, isReverse }) => {
                 <h3 className={`${isReverse ? 'text-indigo-800' : 'text-pink-500'} text-start`}>{title}</h3>
                 <div className="w-full truncate italic text-wrap text-start">{text}</div>
             </div>
-            <VideogameButtonClient gameLink={gameLink} isReverse={isReverse} />
+            <div className="flex p-2">
+                <VideogameButtonClient gameLink={gameLink} isReverse={isReverse} />
+            </div>
         </div>
     )
 }
