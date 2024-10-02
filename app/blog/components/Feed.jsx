@@ -12,7 +12,7 @@ const Feed = ({ feed, error, isLoading }) => {
     return (
         <Panel>
             {isLoading && <div class="loader self-center"></div>}
-            <div className="flex flex-col gap-2">
+            <div className="w-full grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-y-8">
                 {
                     mappedFeedItems && mappedFeedItems.length > 0 &&
                     mappedFeedItems.map((element, index) => {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import VideogameButtonClient from "./VideogameButtonClient";
 
 const VideogameCard = ({ title, text, image, gameLink, isReverse }) => {
@@ -5,16 +6,15 @@ const VideogameCard = ({ title, text, image, gameLink, isReverse }) => {
         window.open(link, '_blank');
     }
     return (
-        <div className={`w-full flex flex-col md:flex-row items-center gap-4 min-h-[300px] ${isReverse && 'md:flex-row-reverse'}`}>
-            {/* Image */}
-            <div className={`w-[240px] md:min-w-[300px] h-[300px] rounded-xl overflow-hidden`}><img src={image} alt={title} className="h-full w-full object-cover" /></div>
-            {/* Info */}
-            <div className="flex-grow flex flex-col">
-                <h3 className={`w-full ${isReverse ? 'md:text-end' : 'md:text-start'}`}>{title}</h3>
-                <p className={isReverse ? 'md:text-end' : 'md:text-start'}>{text}</p>
-                <VideogameButtonClient gameLink={gameLink} isReverse={isReverse} />
-                <hr className={`h-[2px] w-full mt-4 ${isReverse ? 'bg-indigo-800' : 'bg-pink-500'}`} />
+        <div className={`w-full md:w-[300px] h-fit flex flex-col border-2 ${isReverse ? 'border-indigo-800' : 'border-pink-500'} rounded overflow-hidden`}>
+            <div className={`w-full h-[300px] md:h-[240px] overflow-hidden`}>
+                <img src={image} alt={title} className="h-full w-full object-cover" />
+            </div >
+            <div className={`flex flex-col gap-2 p-2 border-t ${isReverse ? 'border-t-indigo-800' : 'border-pink-500'}`}>
+                <h3 className={`${isReverse ? 'text-indigo-800' : 'text-pink-500'} text-start`}>{title}</h3>
+                <div className="w-full truncate italic text-wrap text-start">{text}</div>
             </div>
+            <VideogameButtonClient gameLink={gameLink} isReverse={isReverse} />
         </div>
     )
 }

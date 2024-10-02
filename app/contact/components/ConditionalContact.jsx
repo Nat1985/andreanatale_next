@@ -29,8 +29,8 @@ const ConditionalContact = () => {
                             <Image src="/icons/full_badge.png" width={48} height={48} />
                             <Image src="/icons/full_badge.png" width={48} height={48} />
                         </div>
-                        <p>Spero di averti coinvolto abbastanza da farti percepire la potenza della gamification nel catturare l'attenzione degli utenti.</p>
-                        <p>Ecco di seguito i miei contatti. Facendo divertire gli utenti si può raggiungere qualsiasi obiettivo. Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta per la tua azienda) scrivimi!</p>
+                        <p>La gamification è un'arma molto potente per catturare l'attenzione degli utenti.</p>
+                        <p>Facendo giocare gli utenti si può raggiungere qualsiasi obiettivo. Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta per la tua azienda):</p>
                         <ContactForm />
                     </div>
 

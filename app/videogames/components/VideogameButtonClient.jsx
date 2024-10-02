@@ -5,7 +5,7 @@ const VideogameButtonClient = ({ gameLink, isReverse}) => {
         window.open(link, '_blank');
     }
     return (
-        <button className={`${isReverse ? 'self-end bg-indigo-800' : 'self-start bg-pink-500'} mt-4 text-white rounded py-2 px-4 w-full md:w-fit`} onClick={() => handleButtonLink(gameLink)}>Prova il gioco</button>
+        <button className={`${isReverse ? 'bg-indigo-800' : 'bg-pink-500'} mx-2 my-4 text-white rounded py-2 px-4 w-full md:w-fit`} onClick={() => handleButtonLink(gameLink)}>Prova il gioco</button>
     )
 }
 

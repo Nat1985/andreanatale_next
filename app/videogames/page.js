@@ -12,9 +12,9 @@ export default function VideogamePortfolio() {
     // Controllo videogamesDiscovered in Zustand e se non è true assegno un punto a 'score' e imposto videogamesDiscovered true
     // useRef per far eseguire la condizione soltanto la prima volta che il componente viene montato e non sempre
     const initialEffect = useRef(true);
-    const {addPoints, isVideogamesDiscovered, setVideogamesDiscovered} = useMainStore();
+    const { addPoints, isVideogamesDiscovered, setVideogamesDiscovered } = useMainStore();
     useEffect(() => {
-        if(initialEffect.current && isVideogamesDiscovered === false) {
+        if (initialEffect.current && isVideogamesDiscovered === false) {
             addPoints(1);
             setVideogamesDiscovered();
             initialEffect.current = false;
@@ -24,7 +24,7 @@ export default function VideogamePortfolio() {
     return (
         <main className="mt-4 flex flex-col gap-4">
             <Panel isBlack>
-                <div className="w-full flex flex-col gap-8">
+                <div className="w-full grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-y-8">
                     {
                         videogames &&
                         videogames.map((element, index) => {
