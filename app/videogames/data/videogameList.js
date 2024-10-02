@@ -2,7 +2,7 @@ export const videogames = [
     {
         title: 'Trap Concaverde',
         image: '/images/videogames_images/concaverde.png',
-        text: 'Un advergame per il centro di tiro a volo Trap Concaverde di Lonato del Garda. Oviettivo: avvicinare i giovani a questo sport',
+        text: 'Un advergame per il centro di tiro a volo Trap Concaverde di Lonato del Garda. Obiettivo: avvicinare i giovani a questo sport',
         gameLink: "https://www.claytonvideogame.com"
     },
     {
@@ -14,7 +14,7 @@ export const videogames = [
     {
         title: 'Funside Quiz Game',
         image: '/images/videogames_images/funside.png',
-        text: 'Un quiz game realizzato per la nota catena di fumetterie per festeggiarne il ventesimo anniversario.',
+        text: 'Un quiz game realizzato per la nota catena di fumetterie, per festeggiare il ventesimo anniversario.',
         gameLink: "https://www.makinarioadvergamestudio.com/games/funside-quizgame/"
     },
     {
@@ -32,7 +32,7 @@ export const videogames = [
     {
         title: 'Blanchito MEME game',
         image: '/images/videogames_images/blanco.png',
-        text: 'Un MEME videogame sviluppato in due sere dopola splendida performance "floreale" di Blanco a Sanremo 2023.',
+        text: 'Un MEME videogame sviluppato in due sere dopo la splendida performance "floreale" di Blanco a Sanremo 2023.',
         gameLink: "http://www.makinarioadvergamestudio.com/games/loving-roses"
     },
     {
