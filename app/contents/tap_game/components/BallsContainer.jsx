@@ -44,8 +44,8 @@ const BallsContainer = () => {
     }, [isWin, randomLight])
 
     return (
-        <div className="h-[100px] flex flex-col justify-center">
-            {!isTap && <GameCopy>Forza, tocca la pallina rosa per guadagnare la prima medaglietta!</GameCopy>}
+        <div className="h-[100px] flex flex-col justify-center w-full max-w-[600px]">
+            {!isTap && <GameCopy>Acchiappa la pallina rosa!</GameCopy>}
             <div className="flex justify-evenly">
                 {
                     !isTap &&

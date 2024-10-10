@@ -117,7 +117,7 @@ function CardContainer() {
                 !isMemory && shuffledCards && shuffledCards.length === 4 && destroyedCards.length < 2 &&
                 <div>
                     <div className='max-w-[260px]'>
-                        <GameCopy>Risolvi il memory se vuoi conquistare un'altra medaglietta!</GameCopy>
+                        <GameCopy>Risolvi il memory!</GameCopy>
                     </div>
                     <div className='grid grid-cols-2 gap-2'>
                         {

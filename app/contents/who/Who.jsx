@@ -14,13 +14,12 @@ const Who = ({isBlack}) => {
             <h5>
                 Sono un <PinkSpan>Creative Developer</PinkSpan>
             </h5>
-            <p className="mt-4">
-                Sviluppo <b>soluzioni web creative</b> dal forte impatto stilistico e ludico, <i>piattaforme gamificate</i> e <i>videogames</i>.
-            </p>
+
 
             <p className="mt-4">
-                Sfrutto <b>storytelling</b>, <b>gamification</b> e <b>videogiochi</b> per aiutarti a raggiungere i tuoi obiettivi di business,
+                Sviluppo <b>applicativi web</b> moderni e sartoriali: <i>siti web dinamici</i>, <i>gestionali aziendali</i>, <i>piattaforme gamificate</i> e <i>videogames B2B</i>.
             </p>
+
         </Panel>
     )
 }

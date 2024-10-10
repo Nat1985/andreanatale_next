@@ -1,6 +1,7 @@
 import { Ubuntu, Kalnia } from "next/font/google";
 import "./globals.css";
 import Header from "./components/navbar/Header";
+import Footer from "./components/Footer";
 
 const ubuntu = Ubuntu({
   weight: ['300', '400', '500', '700'],
@@ -22,9 +23,7 @@ export default function RootLayout({ children }) {
         <div className="w-full">
           <Header />
             {children}
-          <footer className="text-white min-h-24 flex justify-center items-center p-2">
-            www.andreanatale.com ®
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>
