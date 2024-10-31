@@ -9,6 +9,16 @@ const Feed = ({ feed, error, isLoading }) => {
         contentEncodedSnippet: item["content:encodedSnippet"] || "",
     }))
 
+    // Immagini
+    const imageArray = [
+        "/icons/colors_icon/quiz.png",
+        "/icons/colors_icon/wine.png",
+        "/icons/colors_icon/loading.png",
+        "/icons/colors_icon/responsive.png",
+        "/icons/colors_icon/trap.png",
+        "/icons/colors_icon/advergame.png"
+    ]
+
     return (
         <Panel>
             {isLoading && <div class="loader self-center"></div>}
@@ -25,6 +35,7 @@ const Feed = ({ feed, error, isLoading }) => {
                             pubDate={element.pubDate}
                             contentEncodedSnippet={element["content:encodedSnippet"]}
                             categories={element.categories}
+                            image={imageArray[index]}
                         />
                     })
                 }

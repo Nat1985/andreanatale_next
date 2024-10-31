@@ -12,7 +12,7 @@ const Potential = ({ isBlack }) => {
             </h2>
             <div className="mt-8 flex flex-col gap-4">
                 <p>Con <b>videogiochi</b> e <b>piattaforme aziendali gamificate</b> si può:</p>
-                <ul className="text-xl flex gap-2 flex-wrap leading-none">
+                <ul className="text-xl flex flex-col md: gap-2 flex-wrap leading-none">
                     <li className="p-1 bg-pink-500 rounded text-white">Rafforzare la percezione del marchio</li>
                     <li className="p-1 bg-indigo-800 rounded text-white">Fidelizzare i clienti</li>
                     <li className="p-1 bg-slate-500 rounded text-white">Attrarne di nuovi</li>

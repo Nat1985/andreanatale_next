@@ -5,6 +5,8 @@ import Panel from "../components/Panel";
 import useMainStore from "../zustand/mainStore";
 import VideogameCard from "./components/VideogameCard";
 import { videogames } from "./data/videogameList";
+import Potential from "../contents/potential/Potential";
+import Makinario from "../contents/makinario/Makinario";
 
 export default function VideogamePortfolio() {
 
@@ -23,7 +25,10 @@ export default function VideogamePortfolio() {
 
     return (
         <main className="mt-4 flex flex-col gap-4">
+            <Potential isBlack />
+            <Makinario />
             <Panel isBlack>
+            <h2 className="mb-16">Da' un'occhata agli advergame che ho sviluppato finora!</h2>
                 <div className="w-full grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-y-8">
                     {
                         videogames &&

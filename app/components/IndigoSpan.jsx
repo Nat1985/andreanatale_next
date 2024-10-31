@@ -1,5 +1,5 @@
 const IndigoSpan = ({ children }) => {
-    return <span className="bg-indigo-800 text-white px-0.5 rounded w-fit">{children}</span>
+    return <span className="bg-indigo-800 text-white py-0.5 px-1 rounded w-fit">{children}</span>
 
 }
 

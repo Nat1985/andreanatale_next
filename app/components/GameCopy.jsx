@@ -1,6 +1,6 @@
 const GameCopy = ({ children }) => {
     return (
-        <h6 className='italic mb-4 text-indigo-800 text-center'>
+        <h6 className='italic mb-4 text-pink-500 text-center'>
             {children}
         </h6>
     )

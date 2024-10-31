@@ -1,5 +1,5 @@
 const PinkSpan = ({ children }) => {
-    return <span className="bg-pink-500 text-white p-0.5 rounded w-fit">{children}</span>
+    return <span className="bg-pink-500 text-white py-0.5 px-1 rounded w-fit">{children}</span>
 
 }
 

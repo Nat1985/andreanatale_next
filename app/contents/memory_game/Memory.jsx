@@ -2,9 +2,9 @@ import GameCopy from "@/app/components/GameCopy";
 import Panel from "../../components/Panel";
 import CardContainer from "./components/CardContainer";
 
-const Memory = () => {
+const Memory = ({isBlack}) => {
     return (
-        <Panel>
+        <Panel isBlack={isBlack}>
             <CardContainer />
         </Panel>
     )

@@ -10,7 +10,7 @@ import Image from "next/image";
 import GameCopy from "@/app/components/GameCopy";
 import useMainStore from "@/app/zustand/mainStore";
 
-const DragGame = () => {
+const DragGame = ({ isBlack }) => {
 
     const [items, setItems] = useState([
         { id: 3, value: <DragCard text="…su misura per il cliente.”" /> },
@@ -45,7 +45,7 @@ const DragGame = () => {
         }
     }, [isWin])
     return (
-        <Panel>
+        <Panel isBlack={isBlack}>
             <div className="h-[293px] flex flex-col justify-center">
                 {
                     !isDrag &&

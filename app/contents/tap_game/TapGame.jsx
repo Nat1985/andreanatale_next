@@ -5,10 +5,10 @@ import BallsContainer from "./components/BallsContainer";
 import GameCopy from "@/app/components/GameCopy";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
 
-const TapGame = () => {
+const TapGame = ({ isBlack}) => {
     const windowWidth = useWindowWidth();
     return (
-        <Panel>
+        <Panel isBlack={isBlack}>
             <BallsContainer />
         </Panel>
     )
