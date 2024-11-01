@@ -13,26 +13,26 @@ const How = ({ isBlack }) => {
     return (
         <Panel isBlack={isBlack}>
             <h2 className="mb-16">Perché dovresti scegliermi?</h2>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8 md:text-start">
                 <div className="flex flex-col md:flex-row gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={custom} alt="custom" width={96} height={96} />
                     </div>
-                    <div className="">Progetto ogni applicativo <b>personalizzandolo</b> completamente secondo le esigenze del cliente. Il mio approccio è sempre su misura a livello progettuale. Ciò non esclude che io possa utilizzare tool di semplificazione dei processi, ma solo quando questo non implica una standardizzazione del risultato che mi impedisca di raggiungere con efficacia miei obiettivi</div>
+                    <div className="">Progetto ogni applicativo <b>personalizzandolo</b> completamente secondo le esigenze del cliente.</div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={usability} alt="custom" width={96} height={96} />
                     </div>
-                    <div className="">Do molta importanza all'<b>usabilità</b> di qualsiasi applicativo che sviluppo e investo tempo e risorse per offrire un prodotto di qualità anche a livello stilistico e di UX</div>
+                    <div className="">Do molta importanza all'<b>usabilità</b> di qualsiasi prodotto che sviluppo e investo tempo e risorse per offrire qualità anche a livello stilistico e di UX</div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={scopes} alt="custom" width={96} height={96} />
                     </div>
-                    <div className="">Cerco di trasmettere più valore possibile nel servizio che offro, prestando attenzione agli <b>obiettivi dell'azienza</b>. Non mi limito a consegnare un applicativo web, ma mi assicuro che con esso la realtà lavorativa dei miei clienti possa trarne il <b>massimo vantaggio</b>.</div>
+                    <div className="">Cerco di trasmettere più valore possibile nel servizio che offro, prestando attenzione agli <b>obiettivi dell'azienda</b>. Non mi limito a consegnare un applicativo web, ma mi assicuro che con esso la realtà lavorativa dei miei clienti possa trarne il <b>massimo vantaggio</b>.</div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 items-center">

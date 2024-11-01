@@ -12,7 +12,7 @@ const Plus = ({ isBlack }) => {
     return (
         <Panel isBlack={isBlack}>
             <h2 className="mb-16">Cosa offro in più?</h2>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8 md:text-start">
                 <div className="flex flex-col md:flex-row gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={optional} alt="custom" width={96} height={96} />

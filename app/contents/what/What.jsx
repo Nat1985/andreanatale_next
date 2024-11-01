@@ -14,7 +14,7 @@ const What = ({ isBlack }) => {
     const videogame = "/icons/colors_icon/videogame.png";
     return (
         <Panel isBlack={isBlack}>
-            <h2 className="mb-16">Cosa esattamente?</h2>
+            <h2 className="mb-16">Cosa sviluppo esattamente?</h2>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:md:grid-cols-6 gap-8">
                 <div className="flex flex-col gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">

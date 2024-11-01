@@ -14,11 +14,11 @@ const Who = ({ isBlack }) => {
                 Andrea.
             </h1>
             <h5>
-                Sono un <PinkSpan>Developer Sartoriale</PinkSpan>
+                Sono un <PinkSpan>Creative Developer</PinkSpan>
             </h5>
 
             <p className="mt-4">
-                Sviluppo <b>applicativi web</b> moderni e sartoriali per liberi professionisti e piccole aziende.
+                Sviluppo <b>applicativi web</b> moderni e sartoriali per <b>liberi professionisti</b> e <b>piccole aziende</b>.
             </p>
 
             <div className='flex justify-center mt-16'>
