@@ -30,7 +30,7 @@ const ConditionalContact = () => {
                         <Image src="/icons/full_badge.png" width={48} height={48} />
                     </div>
                     <p>La gamification è un'arma molto potente per catturare l'attenzione degli utenti.</p>
-                    <p className="mb-8">Facendo giocare gli utenti si può raggiungere qualsiasi obiettivo. Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta per la tua azienda):</p>
+                    <p className="mb-8">Se hai qualche idea (o se vuoi essere aiutato a trovare quella giusta per la tua azienda):</p>
 
                 </div>
             }
@@ -38,8 +38,8 @@ const ConditionalContact = () => {
                 !getContact &&
                 <div className="flex flex-col gap-8 items-center text-center pt-16">
                     <Image src="/icons/empty_badge.png" width={48} height={48} />
-                    <h3 className="text-pink-500">Ti mancano ancora medagliette da collezionare!</h3>
-                    <h4>Torna a navigare il sito per collezionarne altre</h4>
+                    <h5 className="text-pink-500">Ti mancano ancora medagliette da collezionare!</h5>
+                    <h6 className="mt-[-16px]">Torna a navigare il sito per collezionarne altre</h6>
                     <p className="mb-8">oppure</p>
                 </div>
             }

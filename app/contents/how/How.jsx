@@ -18,14 +18,15 @@ const How = ({ isBlack }) => {
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={custom} alt="custom" width={96} height={96} />
                     </div>
-                    <div className="">Progetto ogni applicativo <b>personalizzandolo</b> completamente secondo le esigenze del cliente.</div>
+                    <div className="">Progetto ogni applicativo da zero, <b>personalizzando</b> logica e struttura secondo le esigenze del cliente, in modo da consegnare un prodotto <b>completamente su misura</b>.</div>
+                    {/* <div className="">Ogni applicativo viene progettato completamente <b>su misura</b> secondo le esigenze del cliente.</div> */}
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 items-center">
                     <div className="min-w-[200px] flex justify-center">
                         <Image src={usability} alt="custom" width={96} height={96} />
                     </div>
-                    <div className="">Do molta importanza all'<b>usabilità</b> di qualsiasi prodotto che sviluppo e investo tempo e risorse per offrire qualità anche a livello stilistico e di UX</div>
+                    <div className="">Do molta importanza all'<b>usabilità</b> di qualsiasi applicativo e investo tempo e risorse per offrire qualità anche a livello stilistico e di UX</div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 items-center">
