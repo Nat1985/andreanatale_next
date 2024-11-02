@@ -7,6 +7,7 @@ import VideogameCard from "./components/VideogameCard";
 import { videogames } from "./data/videogameList";
 import Potential from "../contents/potential/Potential";
 import Makinario from "../contents/makinario/Makinario";
+import ScrollPlaceholder from "../components/ScrollPlaceholder";
 
 export default function VideogamePortfolio() {
 
@@ -25,6 +26,7 @@ export default function VideogamePortfolio() {
 
     return (
         <main className="mt-4 flex flex-col gap-4">
+            <ScrollPlaceholder />
             <Potential isBlack />
             <Makinario />
             <Panel isBlack>

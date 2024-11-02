@@ -5,6 +5,7 @@ import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
 import useMainStore from "../zustand/mainStore";
+import ScrollPlaceholder from "../components/ScrollPlaceholder";
 
 const parser = new Parser();
 
@@ -49,6 +50,8 @@ export default function Blog() {
 
     return (
         <main className="mt-4 flex flex-col gap-4">
+            <ScrollPlaceholder />
+            <h2 className="text-center mb-4">I miei <span className="text-indigo-800">articoli</span></h2>
             <Feed feed={feed} error={error} isLoading={isLoading} />
         </main>
     )
