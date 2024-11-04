@@ -13,19 +13,19 @@ function Footer() {
                     </div>
                 </Link>
 
-                <Link href="https://www.youtube.com/@Andynat1985">
+                <Link href="https://www.youtube.com/@Andynat1985" target="_blank">
                     <div className='max-w-16 min-w-8'>
                         <Image src="/icons/youtube.png" width={32} height={32} layout="responsive" />
                     </div>
                 </Link>
 
-                <Link href="www.linkedin.com/in/andreanatale85">
+                <Link href="https://www.linkedin.com/in/andreanatale85" target="_blank">
                     <div className='max-w-16 min-w-8'>
                         <Image src="/icons/linkedin.png" width={32} height={32} layout="responsive" />
                     </div>
                 </Link>
 
-                <Link href="http://www.instagram.com/natcreativedev">
+                <Link href="http://www.instagram.com/natcreativedev" target="_blank">
                     <div className='max-w-16 min-w-8'>
                         <Image src="/icons/instagram.png" width={32} height={32} layout="responsive" />
                     </div>
