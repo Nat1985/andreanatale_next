@@ -34,17 +34,15 @@ function Menu({ yPosition, isOpen }) {
     const { setBurger } = useMainStore();
     const handleClick = (event) => {
         const { id } = event.target;
-        console.log(0)
         setBurger(false);
-        console.log(1)
         router.push(id);
     }
     return (
         <div className={`bg-white w-full flex flex-col items-center md:flex-row justify-evenly lg:justify-center lg:gap-8 p-2 ${yPosition < 80 && 'rounded-b'} md:rounded-none ${!isOpen && 'hidden md:flex'}`}>
             {
-                links.length > 0 && links.map((element, index) => {
-                    return <div className='text-indigo-800 hover:text-pink-500 font-bold cursor-pointer' id={element.link} onClick={handleClick}>{element.label}</div>
-                })
+                links.length > 0 && links.map((element, index) => (
+                    <div key={index} className='text-indigo-800 hover:text-pink-500 font-bold cursor-pointer' id={element.link} onClick={handleClick}>{element.label}</div>
+                ))
             }
         </div>
     )
