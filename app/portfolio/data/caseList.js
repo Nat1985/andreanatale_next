@@ -68,6 +68,6 @@ export const caseList = [
             'MongoDb'
         ],
         link: "",
-        linkLabel: ""
+        linkLabel: "Il link sarà attivo dopo il lancio della piattaforma da parte del cliente"
     },
 ]
