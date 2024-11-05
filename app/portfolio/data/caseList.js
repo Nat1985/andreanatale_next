@@ -59,8 +59,8 @@ export const caseList = [
             "/images/portfolio_images/ticinowild3.png",
         ],
         title: "Ticino Wild - Marketplace geolocalizzato",
-        summary: "Sito web vetrina elegante e minimale.",
-        description: "<p>Piattaforma di <b>acquisto di pacchetti esperienza outdoor</b> da parte degli utenti.</p><p>Il cliente (admin) ha richiesto un processo di onboarding per le aziende che offrono i servizi esperienza e la possibilità di rivendere i pacchetti in questa piattaforma geolocalizzata nella zona del Ticino.</p><p>Gli utenti visualizzano i pacchetti esperienza vicino a sé, attraverso la <b>geolocalizzazione</b> ed un <b>sistema di ricerca con filtri molto elaborato</b>.</p><p>Ad acquisto avvenuto da parte di un utente, il sistema gestisce in automatico il rapporto fra cliente (admin) e azienda che vende il servizio servendosi delle funzionalità pratiche e sicure di <b>Stripe Connect</b>.</p><p>Un lavoro molto stimolante, che mi ha messo alla prova per quanto riguarda la mole di lavoro e l'ottimizzazione di tempo e risorse nello sviluppo.</p>",
+        summary: "Marketplace di acquisto esperienze.",
+        description: "<p>Piattaforma di <b>acquisto di pacchetti esperienza outdoor</b> da parte degli utenti.</p><p>Il cliente (admin) ha richiesto un processo di onboarding per le aziende che offrono i servizi esperienza e la possibilità di rivendere i pacchetti in questa piattaforma geolocalizzata nella zona del Ticino.</p><p>Gli utenti visualizzano i pacchetti esperienza vicino a sé, attraverso la <b>geolocalizzazione</b> ed un <b>sistema di ricerca con filtri molto elaborato</b>. Hanno poi la possibilità di acquistarle selezionando numerose opzioni.</p><p>Ad acquisto avvenuto da parte di un utente, il sistema gestisce in automatico il rapporto fra cliente (admin) e azienda che vende il servizio servendosi delle funzionalità pratiche e sicure di <b>Stripe Connect</b>.</p><p>Un lavoro molto stimolante, che mi ha messo alla prova per quanto riguarda la mole di lavoro e l'ottimizzazione di tempo e risorse durante sviluppo.</p>",
         technologies: [
             'React',
             'Tailwind',
