@@ -8,7 +8,7 @@ const CaseCard = ({ index, title, summary, description, link, linkLabel, technol
             <h3 className={`${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'} text-start`}>{title}</h3>
             <div className="flex gap-2 mt-4">
                 {images.map((img, i) => (
-                    <div key={i} className="w-1/3">
+                    <div key={`image-${i}`} className="w-1/3">
                         <Image
                             src={img}
                             alt="custom"
@@ -25,7 +25,7 @@ const CaseCard = ({ index, title, summary, description, link, linkLabel, technol
             <div className="flex gap-2 mt-8 flex-wrap">
                 {
                     technologies && technologies.map((element, index) => {
-                        return <div key={index} className="py-1 px-3 bg-slate-200 rounded-lg font-thin text-slate-400">{element}</div>
+                        return <div key={`tech-${index}`} className="py-1 px-3 bg-slate-200 rounded-lg font-thin text-slate-400">{element}</div>
                     })
                 }
             </div>
