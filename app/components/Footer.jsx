@@ -31,6 +31,12 @@ function Footer() {
                     </div>
                 </Link>
 
+                <Link href="http://www.github.com/nat1985" target="_blank">
+                    <div className='max-w-16 min-w-8'>
+                        <Image src="/icons/github.png" width={32} height={32} layout="responsive" />
+                    </div>
+                </Link>
+
             </div>
             <div>www.andreanatale.com ®</div>
         </footer>
