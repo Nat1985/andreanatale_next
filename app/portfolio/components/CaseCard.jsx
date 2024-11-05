@@ -24,9 +24,9 @@ const CaseCard = ({ index, title, summary, description, link, linkLabel, technol
             <p className="text-start flex flex-col gap-4" dangerouslySetInnerHTML={{ __html: description }} />
             <div className="flex gap-2 mt-8 flex-wrap">
                 {
-                    technologies && technologies.map((element, index) => {
-                        return <div key={`tech-${index}`} className="py-1 px-3 bg-slate-200 rounded-lg font-thin text-slate-400">{element}</div>
-                    })
+                    technologies && technologies.map((element, index) => (
+                        <div key={`tech-${index}`} className="py-1 px-3 bg-slate-200 rounded-lg font-thin text-slate-400">{element}</div>
+                    ))
                 }
             </div>
             <Link href={link} target="_blank"><div className={`${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'}`}>{linkLabel}</div></Link>
