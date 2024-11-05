@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CaseCard = ({ index, title, summary, description, link, linkLabel, technologies, images }) => {
-    console.log('images: ', images)
     return (
         <div className={`w-full flex flex-col items-start gap-2 border-2 ${index % 2 === 0 ? 'border-indigo-800' : 'border-pink-500'} rounded p-4`}>
             <h3 className={`${index % 2 === 0 ? 'text-indigo-800' : 'text-pink-500'} text-start`}>{title}</h3>
