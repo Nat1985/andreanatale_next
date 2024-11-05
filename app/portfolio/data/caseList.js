@@ -24,7 +24,7 @@ export const caseList = [
             "/images/portfolio_images/tattooswap3.png",
         ],
         title: "Tattooswap - Marketplace geolocalizzato",
-        summary: "Marketplace di scambio di attrezzatura usata.",
+        summary: "Marketplace di scambio prodotti usati.",
         description: "<p>Tanti settori sono serviti da piattaforme di <b>riciclo</b> (Vintend - vestiti, Weply - articoli sportivi, ecc). Desideravo offrire del valore al settore di estetica e tatuaggio.</p><p>Tattooswap è un <b>marketplace</b> di compra/vendita di attrezzature usate per tatuatori, un settore che era ancora scoperto riguardo a servizi sul riciclo.</p><p>Un sistema di filtri permette una ricerca accurata dei prodotti divisi per categorie.</p><p>Sulla piattaforma gli utenti hanno la possibilità, tramite <b>geolocalizzazione</b>, di visualizzare i prodotti più vicini. Questo ottimizza gli scambi ed evita sprechi anche per quanto riguarda le spedizioni.</p><p>I dati degli utenti sono trattati con il massimo rispetto delle normative sulla privacy e sistemi di criptaggio permettono di mantenere un alto livello di sicurezza.</p><p>E' un progetto nato nel settembre 2023. Provvedo al refactoring costante ed all'implementazione di funzionalità. La piattaforma è molto giovane, conta quasi 200 utenti e altrettanti prodotti.</p>",
         technologies: [
             'React',
