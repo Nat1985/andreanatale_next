@@ -6,7 +6,7 @@ export const caseList = [
             "/images/portfolio_images/vincanta3.png",
         ],
         title: "Vincanta - Carta dei vini",
-        summary: "Carta dei vini interattiva per la gestione dei prodotti presenti in cantina.",
+        summary: "Carta dei vini interattiva per la gestione dei prodotti presenti in magazzino.",
         description: "<p><b>Carta dei vini interattiva</b> per un cliente ristoratore che necessitava di un applicativo per gestire i prodotti presenti in cantina e poterli presentare col proprio tablet ai clienti seduti al tavolo.</p><p>L'applicativo è nato semplice ed è stato arricchito di funzionalità dopo svariate prove del cliente, fra cui un <b>sistema di ricerca molto specifico</b>, progettato secondo le sue esatte richieste.</p>",
         technologies: [
             'React',
