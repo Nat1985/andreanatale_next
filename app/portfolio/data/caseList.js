@@ -10,6 +10,7 @@ export const caseList = [
         description: "<p><b>Carta dei vini interattiva</b> per un cliente ristoratore che necessitava di un applicativo per gestire i prodotti presenti in cantina e poterli presentare col proprio tablet ai clienti seduti al tavolo.</p><p>L'applicativo è nato semplice ed è stato arricchito di funzionalità dopo svariate prove del cliente, fra cui un <b>sistema di ricerca molto specifico</b>, progettato secondo le sue esatte richieste.</p>",
         technologies: [
             'React',
+            'Redux',
             'Tailwind',
             'NodeJs',
             'MongoDb'
@@ -28,6 +29,7 @@ export const caseList = [
         description: "<p>Tanti settori sono serviti da piattaforme di <b>riciclo</b> (Vintend - vestiti, Weply - articoli sportivi, ecc). Desideravo offrire del valore al settore di estetica e tatuaggio.</p><p>Tattooswap è un <b>marketplace</b> di compra/vendita di attrezzature usate per tatuatori, un settore che era ancora scoperto riguardo a servizi sul riciclo.</p><p>Un sistema di filtri permette una ricerca accurata dei prodotti divisi per categorie.</p><p>Sulla piattaforma gli utenti hanno la possibilità, tramite <b>geolocalizzazione</b>, di visualizzare i prodotti più vicini. Questo ottimizza gli scambi ed evita sprechi anche per quanto riguarda le spedizioni.</p><p>I dati degli utenti sono trattati con il massimo rispetto delle normative sulla privacy e sistemi di criptaggio permettono di mantenere un alto livello di sicurezza.</p><p>E' un progetto nato nel settembre 2023. Provvedo al refactoring costante ed all'implementazione di funzionalità. La piattaforma è molto giovane, conta quasi 200 utenti e altrettanti prodotti.</p>",
         technologies: [
             'React',
+            'Redux',
             'Tailwind',
             'NodeJs',
             'MongoDb'
@@ -63,12 +65,13 @@ export const caseList = [
         description: "<p>Piattaforma di <b>acquisto di pacchetti esperienza outdoor</b> da parte degli utenti.</p><p>Il cliente (admin) ha richiesto un processo di onboarding per le aziende che offrono i servizi esperienza e la possibilità di rivendere i pacchetti in questa piattaforma geolocalizzata nella zona del Ticino.</p><p>Gli utenti visualizzano i pacchetti esperienza vicino a sé, attraverso la <b>geolocalizzazione</b> ed un <b>sistema di ricerca con filtri molto elaborato</b>. Hanno poi la possibilità di acquistarle selezionando numerose opzioni.</p><p>Ad acquisto avvenuto da parte di un utente, il sistema gestisce in automatico il rapporto fra cliente (admin) e azienda che vende il servizio servendosi delle funzionalità pratiche e sicure di <b>Stripe Connect</b>.</p><p>Un lavoro molto stimolante, che mi ha messo alla prova per quanto riguarda la mole di lavoro e l'ottimizzazione di tempo e risorse durante sviluppo.</p>",
         technologies: [
             'React',
+            'Redux',
             'Tailwind',
             'NodeJs',
             'MongoDb'
         ],
         link: "",
-        linkLabel: "Il link sarà attivo dopo il lancio della piattaforma da parte del cliente"
+        linkLabel: ""
     },
     {
         images: [
@@ -80,12 +83,12 @@ export const caseList = [
         summary: "Sito web gamificato.",
         description: "<p>Sito interamente realizzato in NextJs 14 con l'intento di sfruttare la server side generation dei componenti, in modo da ottimizzare il sito lato SEO.</p><p>Questo progetto, utilizzato come sito web vetrina personale, cerco di mantenerlo fresco e aggiornato, utilizzandolo come banco di prova per nuove librerie o linguaggi che ho intenzione di testare.</p><p>Ho implementato dei mini-game all'interno delle pagine per creare, a livello di esperienza, un semplice <b>processo di gamification</b>, il quale guida l'utente a collezionare delle 'medagliette' che gli consentano di raggiungere un determinato obiettivo finale.</p><p>Ho inserito una sezione blog, dove condivido degli articoli che riguardano il mio lavoro.</p>",
         technologies: [
-            'React',
+            'NextJs',
+            'Zustand',
             'Tailwind',
-            'NodeJs',
-            'MongoDb'
+            'Zustand'
         ],
         link: "",
-        linkLabel: "Il link sarà attivo dopo il lancio della piattaforma da parte del cliente"
+        linkLabel: ""
     },
 ]
