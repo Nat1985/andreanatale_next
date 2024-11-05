@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Footer() {
     return (
         <footer className="text-white min-h-24 flex flex-col justify-center items-center p-2">
-            <div className="flex gap-16 mx-8 my-16">
+            <div className="flex gap-10 mx-8 my-16">
 
                 <Link href="mailto:andreanatale85@proton.me">
                     <div className='max-w-16 min-w-8'>
