@@ -1,4 +1,4 @@
-import { Ubuntu, Kalnia } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import Header from "./components/navbar/Header";
 import Footer from "./components/Footer";
@@ -7,9 +7,6 @@ const ubuntu = Ubuntu({
   weight: ['300', '400', '500', '700'],
   subsets: ['latin']
 });
-const kalnia = Kalnia({
-  subsets: ['latin']
-})
 
 export const metadata = {
   title: "Andrea Natale",

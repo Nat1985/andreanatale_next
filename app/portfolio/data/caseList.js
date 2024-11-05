@@ -70,4 +70,22 @@ export const caseList = [
         link: "",
         linkLabel: "Il link sarà attivo dopo il lancio della piattaforma da parte del cliente"
     },
+    {
+        images: [
+            "/images/portfolio_images/andreanatale1.png",
+            "/images/portfolio_images/andreanatale2.png",
+            "/images/portfolio_images/andreanatale3.png",
+        ],
+        title: "Andreanatale.com - Sito web dinamico",
+        summary: "Sito web gamificato.",
+        description: "<p>Sito interamente realizzato in NextJs 14 con l'intento di sfruttare la server side generation dei componenti, in modo da ottimizzare il sito lato SEO.</p><p>Questo progetto, utilizzato come sito web vetrina personale, cerco di mantenerlo fresco e aggiornato, utilizzandolo come banco di prova per nuove librerie o linguaggi che ho intenzione di testare.</p><p>Ho implementato dei mini-game all'interno delle pagine per creare, a livello di esperienza, un semplice <b>processo di gamification</b>, il quale guida l'utente a collezionare delle 'medagliette' che gli consentano di raggiungere un determinato obiettivo finale.</p><p>Ho inserito una sezione blog, dove condivido degli articoli che riguardano il mio lavoro.</p>",
+        technologies: [
+            'React',
+            'Tailwind',
+            'NodeJs',
+            'MongoDb'
+        ],
+        link: "",
+        linkLabel: "Il link sarà attivo dopo il lancio della piattaforma da parte del cliente"
+    },
 ]
