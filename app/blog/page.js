@@ -49,7 +49,6 @@ export default function Blog() {
 
     return (
         <main className="mt-4 flex flex-col gap-4">
-            <ScrollPlaceholder />
             <h2 className="text-center mb-4">I miei <span className="text-indigo-800">articoli</span></h2>
             <Feed feed={feed} error={error} isLoading={isLoading} />
         </main>

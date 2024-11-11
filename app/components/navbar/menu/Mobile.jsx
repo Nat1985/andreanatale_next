@@ -66,7 +66,7 @@ function Mobile({ menuList }) {
       {
         isOpen &&
         <div className='fixed inset-0 flex'>
-          <div ref={overlayRef} className='h-full flex-grow bg-black/80'></div>
+          <div ref={overlayRef} className='h-full flex-grow bg-black/80' onClick={() => closeMenu(null)}></div>
           <div ref={menuRef} className='h-full w-[300px] bg-white flex flex-col p-4 justify-center'>
             <div className='fixed top-5 right-4'><img src="icons/arrow-right.svg" alt="close" width={32} height={32} onClick={() => closeMenu(null)} /></div>
             <ul className='text-4xl flex flex-col gap-8 mt-16 p-4'>
