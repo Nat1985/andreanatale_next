@@ -3,89 +3,45 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black
+    @apply bg-emerald-200;
+    /* background-color: rgb(255, 215, 225); */
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 6rem;
     @apply leading-none
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 4rem;
     @apply leading-none
 }
 
 h3 {
     font-size: 2rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 h4 {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 h5 {
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 h5 {
     font-size: 1rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 h6 {
     font-size: 0.8rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 .get-leading {
     line-height: normal;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-    width: 35px;
-    aspect-ratio: 1;
-    --_g: no-repeat radial-gradient(circle closest-side, #3730a3 90%, white);
-    background:
-        var(--_g) 0 0,
-        var(--_g) 0 100%,
-        var(--_g) 100% 100%;
-    background-size: 40% 40%;
-    animation: l11 1s infinite linear;
-}
-
-@keyframes l11 {
-    25% {
-        background-position: 100% 0, 0 100%, 100% 100%
-    }
-
-    50% {
-        background-position: 100% 0, 0 0, 100% 100%
-    }
-
-    75% {
-        background-position: 100% 0, 0 0, 0 100%
-    }
-
-    100% {
-        background-position: 100% 100%, 0 0, 0 100%
-    }
 }
