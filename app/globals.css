@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-emerald-200;
+    background-color: rgb(165, 243, 252);
     /* background-color: rgb(255, 215, 225); */
 }
 
@@ -44,4 +44,51 @@ h6 {
 
 .get-leading {
     line-height: normal;
+}
+
+
+.mouse {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #333;
+	border-radius: 60px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+/* Aggiungi questo al tuo CSS globale */
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar in Chrome, Safari e altri WebKit */
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Nasconde la scrollbar in Internet Explorer e Edge */
+    scrollbar-width: none;     /* Nasconde la scrollbar in Firefox */
 }
