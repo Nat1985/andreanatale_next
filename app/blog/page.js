@@ -5,7 +5,6 @@ import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
 import useMainStore from "../zustand/mainStore";
-import ScrollPlaceholder from "../components/ScrollPlaceholder";
 
 const parser = new Parser();
 
