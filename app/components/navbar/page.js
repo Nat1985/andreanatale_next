@@ -10,10 +10,6 @@ import gsap from 'gsap'
 function Navbar() {
     const menuList = [
         {
-            label: 'Home',
-            link: '/'
-        },
-        {
             label: 'Blog',
             link: '/blog'
         },

@@ -34,23 +34,18 @@ export default function Blog() {
         }
     }
 
-    // Assegno un punto alla scoperta di questa sezione
-    // Controllo blogDiscoverd in Zustand e se non è true assegno un punto a 'score' e imposto blogDiscovered true
-    // useRef per far eseguire la condizione soltanto la prima volta che il componente viene montato e non sempre
-    const initialEffect = useRef(true);
-    const { addPoints, isBlogDiscovered, setBlogDiscovered } = useMainStore();
     useEffect(() => {
-        if (initialEffect.current && isBlogDiscovered === false) {
-            addPoints(1);
-            setBlogDiscovered();
-            initialEffect.current = false;
+        if(feed) {
+            console.log(feed)
         }
-    }, [isBlogDiscovered]);
+    }, [feed])
 
     return (
-        <main className="mt-4 flex flex-col gap-4">
-            <h2 className="text-center mb-4">I miei <span className="text-indigo-800">articoli</span></h2>
-            <Feed feed={feed} error={error} isLoading={isLoading} />
+        <main className="flex flex-col items-center pt-32 bg-rose-200">
+            <h3 className='mb-32 text-center'>Blog</h3>
+            {
+                feed && feed
+            }
         </main>
     )
 }

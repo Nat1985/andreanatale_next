@@ -1,6 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/page";
+import Footer from "./components/Footer";
 
 const outfit = Outfit({
   weight: ['300', '400', '500', '700'],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${outfit.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
