@@ -8,37 +8,37 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 8rem;
     @apply leading-none
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     @apply leading-none
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 4rem;
     @apply leading-none
 }
 
 h4 {
+    font-size: 3rem;
+    @apply leading-none
+}
+
+h5 {
+    font-size: 2rem;
+    @apply leading-none
+}
+
+h5 {
     font-size: 1.5rem;
     @apply leading-none
 }
 
-h5 {
-    font-size: 1.2rem;
-    @apply leading-none
-}
-
-h5 {
-    font-size: 1rem;
-    @apply leading-none
-}
-
 h6 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     @apply leading-none
 }
 
@@ -50,7 +50,7 @@ h6 {
 .mouse {
 	width: 50px;
 	height: 90px;
-	border: 3px solid #0899b2;
+	border: 3px solid #67e4f9;
 	border-radius: 60px;
 	position: relative;
 	&::before {
@@ -61,7 +61,7 @@ h6 {
 		top: 10px;
 		left: 50%;
 		transform: translateX(-50%);
-		background-color: #0899b2;
+		background-color: #67e4f9;
 		border-radius: 50%;
 		opacity: 1;
 		animation: wheel 2s infinite;

@@ -46,7 +46,7 @@ function Navbar() {
 
     useEffect(() => {
         const shouldBeColored = scrollPosition >= 100;
-        
+
         if (shouldBeColored !== isColored) {
             setIsColored(shouldBeColored);
             toggleNavbarColor(shouldBeColored); // Esegui animazione solo quando cambia
@@ -56,10 +56,8 @@ function Navbar() {
     return (
         <div ref={navbarRef} className='fixed h-[80px] p-4 w-full flex justify-between z-10'>
             <Logo />
-            <div>
-                <Mobile menuList={menuList} />
-                <Desktop menuList={menuList} />
-            </div>
+            <Mobile menuList={menuList} />
+            <Desktop menuList={menuList} />
         </div>
     )
 }

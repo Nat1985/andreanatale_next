@@ -9,7 +9,6 @@ export default function Home() {
             <Hero />
             <Works />
             <div className="h-[800px] bg-cyan-200 w-full">Section</div>
-            <div className="h-[800px] bg-cyan-200 w-full">Section</div>
         </main>
     );
 }

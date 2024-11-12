@@ -33,9 +33,9 @@ function Works() {
         },
     ]
     return (
-        <div className='w-full p-8 bg-white'>
-            <h3 className='mb-32 text-center'>Some works...</h3>
-            <div className='flex flex-col gap-16'>
+        <div className='w-full p-8 pt-16 bg-cyan-100'>
+            <h3 className='mb-32 text-center'>Some last works...</h3>
+            <div className='flex flex-col gap-16 md:gap-32 lg:gap-64'>
                 {
                     cardData && cardData.map((element, index) => (
                         <WorkCard key={index} data={element} />
