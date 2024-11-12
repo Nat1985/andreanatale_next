@@ -11,7 +11,7 @@ function WorkCard({data}) {
                 <h2 className='hidden sm:block'>{data.title}</h2>
                 <h3 className='sm:hidden'>{data.title}</h3>
                 <div className='flex relative mt-4'>
-                    <div className='absolute left-[-30px] top-16 transform rotate-90 text-cyan-600'>Web applications</div>
+                    <div className='absolute left-[-30px] top-16 transform rotate-90 text-cyan-600'>{data.type}</div>
                     <div className='ml-16 flex flex-col'>
                         <div className='text-sm text-cyan-300'>{data.summary}</div>
                         <div className='font-light'>{data.text}</div>
