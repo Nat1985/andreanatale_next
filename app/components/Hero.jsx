@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap';
+import Avatar from './Avatar';
 
 function Hero() {
     const whatList = [
@@ -47,14 +48,7 @@ function Hero() {
                 <h1 className='hidden lg:block font-medium'> Creative</h1>
                 <h2 className='hidden md:block lg:hidden font-medium'>Creative</h2>
                 <h3 className='md:hidden font-medium'>Creative</h3>
-                <div className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] rounded-full overflow-hidden relative">
-                    <Image
-                        src="/images/io.png"
-                        alt="Andrea Natale"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                    />
-                </div>
+                <Avatar />
             </div>
             <h1 className='hidden lg:block font-medium'>- Developer</h1>
             <h2 className='hidden md:block lg:hidden font-medium'>- Developer</h2>
@@ -69,7 +63,7 @@ function Hero() {
                         <div className='flex flex-col'>
                             {
                                 whatList.map((element, index) => (
-                                    <span key={index} className='text-[#EC4899]'>{element}</span>
+                                    <span key={index} className='text-[#DEBEBE]'>{element}</span>
                                 ))
                             }
                         </div>

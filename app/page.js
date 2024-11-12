@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import Works from "./components/sections/works/Works";
+import SayHello from "./components/sections/say-hello/SayHello";
 
 export default function Home() {
     return (
@@ -8,7 +9,7 @@ export default function Home() {
             {/* Hero */}
             <Hero />
             <Works />
-            <div className="h-[800px] bg-cyan-200 w-full">Section</div>
+            <SayHello />
         </main>
     );
 }

@@ -61,7 +61,7 @@ function Mobile({ menuList }) {
     }, 800)
   }
   return (
-    <div className='md:hidden'>
+    <div className='md:hidden flex items-center'>
       <div className='w-8 flex justify-center' onClick={openMenu}><Image src="/icons/dots-menu.svg" width={32} height={32} /></div>
       {
         isOpen &&
