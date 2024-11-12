@@ -41,11 +41,11 @@ function Hero() {
         return () => clearInterval(scrollIntervalRef.current);
     }, []);
     return (
-        <div className="flex flex-col mx-16 items-center">
-            <div className='mb-[-16px]'>Hello, I'm Andrea Natale</div>
+        <div className="flex flex-col mx-16 mb-16">
+            <h4 className='mb-[-16px]'>Hello, I'm Andrea Natale</h4>
             <div className="flex gap-2 md:gap-8 items-center">
-                <h1 className='hidden md:block'> Creative</h1>
-                <h2 className='md:hidden'>Creative</h2>
+                <h1 className='hidden md:block font-medium'> Creative</h1>
+                <h2 className='md:hidden font-medium'>Creative</h2>
                 <div className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] rounded-full overflow-hidden relative">
                     <Image
                         src="/images/io.png"
@@ -55,8 +55,8 @@ function Hero() {
                     />
                 </div>
             </div>
-            <h1 className='hidden md:block'>developer</h1>
-            <h2 className='md:hidden'>developer</h2>
+            <h1 className='hidden md:block font-medium'>- Developer</h1>
+            <h2 className='md:hidden font-medium'>- Developer</h2>
             <div className='mt-16 md:mt-4 flex flex-col gap-32'>
                 <div className="flex md:flex-row items-center text-xl md:text-4xl gap-2">
                     <div>

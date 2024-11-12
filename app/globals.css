@@ -50,7 +50,7 @@ h6 {
 .mouse {
 	width: 50px;
 	height: 90px;
-	border: 3px solid #333;
+	border: 3px solid #0899b2;
 	border-radius: 60px;
 	position: relative;
 	&::before {
@@ -61,7 +61,7 @@ h6 {
 		top: 10px;
 		left: 50%;
 		transform: translateX(-50%);
-		background-color: #333;
+		background-color: #0899b2;
 		border-radius: 50%;
 		opacity: 1;
 		animation: wheel 2s infinite;

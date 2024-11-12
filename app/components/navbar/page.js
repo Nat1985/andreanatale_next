@@ -39,7 +39,7 @@ function Navbar() {
     // Funzione per attivare l'animazione con gsap, solo se il colore cambia
     const toggleNavbarColor = useCallback((shouldBeColored) => {
         gsap.to(navbarRef.current, {
-            backgroundColor: shouldBeColored ? 'rgba(165, 243, 252)' : 'rgba(165, 243, 252, 0)',
+            backgroundColor: shouldBeColored ? 'rgba(255, 255, 255)' : 'rgba(255, 255, 255, 0)',
             duration: 0.4,
         });
     }, []);
