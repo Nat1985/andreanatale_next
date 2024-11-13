@@ -5,6 +5,7 @@ import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
 import useMainStore from "../zustand/mainStore";
+import PostSection from "./components/PostSection";
 
 const parser = new Parser();
 
@@ -34,17 +35,23 @@ export default function Blog() {
         }
     }
 
+    // Reverse sugli items
+    const [mappedFeedItems, setMappedFeedItems] = useState(null);
     useEffect(() => {
-        if(feed) {
-            console.log(feed)
-        }
+        const newObject = feed && feed.items.slice().map(item => ({
+            ...item,
+            contentEncodedSnippet: item["content:encodedSnippet"] || "",
+        }));
+        setMappedFeedItems(newObject)
     }, [feed])
 
     return (
-        <main className="flex flex-col items-center pt-32 bg-rose-200">
+        <main className="flex flex-col items-center bg-rose-200 pt-32 lg:pt-64">
             <h3 className='mb-32 text-center'>Blog</h3>
             {
-                feed && feed
+                mappedFeedItems && mappedFeedItems.map((element, index) => (
+                    <PostSection key={index} data={element} isEven={index % 2 ? true : false} />
+                ))
             }
         </main>
     )

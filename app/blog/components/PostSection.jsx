@@ -1,8 +1,9 @@
 import React from 'react'
 
-function PostSection({ isEven }) {
+function PostSection({ data, isEven }) {
+    console.log('data: ', data)
     return (
-        <div className={`${isEven ? 'bg-cyan-100' : 'bg-cyan-200'}`}>
+        <div className={`${isEven ? 'bg-rose-200' : 'bg-rose-100'} w-full px-8 md:px-32 lg:px-64`}>
             Post section
         </div>
     )

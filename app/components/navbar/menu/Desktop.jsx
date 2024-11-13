@@ -1,27 +1,27 @@
 "use client"
 
 import useScrollPosition from '@/app/hooks/useScrollPosition'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
 
 function Desktop({ menuList }) {
-  const scrollPosition = useScrollPosition();
-  useEffect(() => {
-    console.log(scrollPosition)
-  }, [scrollPosition])
+  const router = useRouter();
   const handleClick = (link) => {
-    console.log(link)
-    if(link = "/works") {
+    if(link === "/works") {
       window.scrollTo({
         top: 1170,
         behavior: 'smooth'
       })
-    }
-    if(link = "/contacts") {
+    };
+    if(link === "/contact") {
       window.scrollTo({
         top: 4595,
         behavior: 'smooth'
       })
+    };
+    if(link === "/blog") {
+      router.push("/blog")
     }
   }
   return (

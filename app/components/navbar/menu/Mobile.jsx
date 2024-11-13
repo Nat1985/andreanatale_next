@@ -5,6 +5,7 @@ import Image from 'next/image'
 import useMainStore from '@/app/zustand/mainStore'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { useRouter } from 'next/navigation';
 
 function Mobile({ menuList }) {
   // Gestisco apertura e chiusura del menu
@@ -37,8 +38,8 @@ function Mobile({ menuList }) {
   }, [isOpen])
 
   // Gestisco chiusura del menu
+  const router = useRouter();
   const closeMenu = (link) => {
-    console.log(link)
     // Overlay
     gsap.to(overlayRef.current, {
       opacity: 0,
@@ -58,6 +59,21 @@ function Mobile({ menuList }) {
     });
     setTimeout(() => {
       setBurger(false)
+      if (link === "/works") {
+        window.scrollTo({
+          top: 585,
+          behavior: 'smooth'
+        })
+      };
+      if (link === '/contact') {
+        window.scrollTo({
+          top: 3704,
+          behavior: 'smooth'
+        })
+      };
+      if(link === "/blog") {
+        router.push("/blog")
+      }
     }, 800)
   }
   return (
@@ -72,7 +88,7 @@ function Mobile({ menuList }) {
             <ul className='text-4xl flex flex-col gap-8 mt-16 p-4'>
               {
                 menuList.map((element, index) => (
-                  <li key={index} className='field' onClick={() => closeMenu(element.link)}>{element.label}</li>
+                  <li key={index} className='field cursor-default' onClick={() => closeMenu(element.link)}>{element.label}</li>
                 ))
               }
             </ul>

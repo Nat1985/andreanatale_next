@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function WorkCard({data}) {
+function WorkCard({image, title, type, }) {
     return (
         <div className='flex flex-col lg:flex-row sm:items-center justify-center'>
             {/* IMAGE */}
