@@ -54,8 +54,6 @@ export default function Blog() {
     ]
     
 
-
-
     return (
         <main className="flex flex-col items-center bg-rose-200 pt-32 lg:pt-64">
             <h3 className='mb-32 text-center'>Blog</h3>

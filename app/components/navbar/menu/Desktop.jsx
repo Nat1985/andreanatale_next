@@ -30,6 +30,9 @@ function Desktop({ menuList }) {
     if (link === "/blog") {
       router.push("/blog")
     }
+    if (link === "/videogames") {
+      router.push("/videogames")
+    }
   }
   return (
     <div className='hidden md:flex items-center'>

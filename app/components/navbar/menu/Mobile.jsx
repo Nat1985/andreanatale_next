@@ -80,6 +80,9 @@ function Mobile({ menuList }) {
       };
       if (link === "/blog") {
         router.push("/blog")
+      };
+      if (link === "/videogames") {
+        router.push("/videogames")
       }
     }, 800)
   }
