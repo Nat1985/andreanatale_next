@@ -3,55 +3,42 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black
+    background-color: rgb(165, 243, 252);
+    /* background-color: rgb(255, 215, 225); */
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 8rem;
     @apply leading-none
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 6rem;
     @apply leading-none
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 4rem;
     @apply leading-none
 }
 
 h4 {
+    font-size: 3rem;
+    @apply leading-none
+}
+
+h5 {
+    font-size: 2rem;
+    @apply leading-none
+}
+
+h5 {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #64748b;
-    @apply leading-none
-}
-
-h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #64748b;
-    @apply leading-none
-}
-
-h5 {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #64748b;
     @apply leading-none
 }
 
 h6 {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #64748b;
+    font-size: 1rem;
     @apply leading-none
 }
 
@@ -59,33 +46,49 @@ h6 {
     line-height: normal;
 }
 
-/* HTML: <div class="loader"></div> */
-.loader {
-    width: 35px;
-    aspect-ratio: 1;
-    --_g: no-repeat radial-gradient(circle closest-side, #3730a3 90%, white);
-    background:
-        var(--_g) 0 0,
-        var(--_g) 0 100%,
-        var(--_g) 100% 100%;
-    background-size: 40% 40%;
-    animation: l11 1s infinite linear;
+
+.mouse {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #67e4f9;
+	border-radius: 60px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #67e4f9;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
 }
 
-@keyframes l11 {
-    25% {
-        background-position: 100% 0, 0 100%, 100% 100%
-    }
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
 
-    50% {
-        background-position: 100% 0, 0 0, 100% 100%
-    }
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
 
-    75% {
-        background-position: 100% 0, 0 0, 0 100%
-    }
+/* Aggiungi questo al tuo CSS globale */
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar in Chrome, Safari e altri WebKit */
+}
 
-    100% {
-        background-position: 100% 100%, 0 0, 0 100%
-    }
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Nasconde la scrollbar in Internet Explorer e Edge */
+    scrollbar-width: none;     /* Nasconde la scrollbar in Firefox */
 }

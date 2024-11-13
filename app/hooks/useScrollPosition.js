@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
-import useMainStore from "../zustand/mainStore";
 
 const useScrollPosition = () => {
-    const { yPosition, setYPosition } = useMainStore();
+    const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
         const handleScroll = () => {
-            setYPosition(window.scrollY);
+            setScrollPosition(window.scrollY);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll)
         };
-    }, [setYPosition])
-    return yPosition;
+    }, [])
+    return scrollPosition;
 }
 
 export default useScrollPosition;

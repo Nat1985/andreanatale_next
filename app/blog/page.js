@@ -1,11 +1,9 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react";
-import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
-import useMainStore from "../zustand/mainStore";
-import ScrollPlaceholder from "../components/ScrollPlaceholder";
+import PostCard from "./components/PostCard";
 
 const parser = new Parser();
 
@@ -35,24 +33,37 @@ export default function Blog() {
         }
     }
 
-    // Assegno un punto alla scoperta di questa sezione
-    // Controllo blogDiscoverd in Zustand e se non è true assegno un punto a 'score' e imposto blogDiscovered true
-    // useRef per far eseguire la condizione soltanto la prima volta che il componente viene montato e non sempre
-    const initialEffect = useRef(true);
-    const { addPoints, isBlogDiscovered, setBlogDiscovered } = useMainStore();
+    // Reverse sugli items
+    const [mappedFeedItems, setMappedFeedItems] = useState(null);
     useEffect(() => {
-        if (initialEffect.current && isBlogDiscovered === false) {
-            addPoints(1);
-            setBlogDiscovered();
-            initialEffect.current = false;
-        }
-    }, [isBlogDiscovered]);
+        const newObject = feed && feed.items.slice().map(item => ({
+            ...item,
+            contentEncodedSnippet: item["content:encodedSnippet"] || "",
+        }));
+        setMappedFeedItems(newObject)
+    }, [feed])
+
+    // Array immagini
+    const imagesArray = [
+        "/images/blog/funside.png",
+        "/images/blog/vincanta.png",
+        "/images/blog/cloudinary.png",
+        "/images/blog/responsive.png",
+        "/images/blog/trapconcaverde.png",
+        "/images/blog/advergames.png",
+    ]
+    
 
     return (
-        <main className="mt-4 flex flex-col gap-4">
-            <ScrollPlaceholder />
-            <h2 className="text-center mb-4">I miei <span className="text-indigo-800">articoli</span></h2>
-            <Feed feed={feed} error={error} isLoading={isLoading} />
+        <main className="flex flex-col items-center bg-rose-200 pt-32 lg:pt-64">
+            <h3 className='mb-32 text-center'>Blog</h3>
+            {
+                mappedFeedItems && mappedFeedItems.map((element, index) => (
+                    <div key={index} className={`${index % 2 ? 'bg-rose-200' : 'bg-rose-100'} w-full p-8 md:p-32 lg:p-64`}>
+                        <PostCard creator={element.creator} title={element.title} link={element.link} pubData={element.pubDate} contentEncodedSnippet={element["content:encodedSnippet"]} categories={element.categories} image={imagesArray[index]} />
+                    </div>
+                ))
+            }
         </main>
     )
 }
