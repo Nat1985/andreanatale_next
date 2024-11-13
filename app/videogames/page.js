@@ -65,8 +65,8 @@ function Videogames() {
             <h3 className='mb-32 text-center'>Videogames</h3>
             {
                 videogames.map((element, index) => (
-                    <div className={`${index % 2 ? 'bg-cyan-200' : 'bg-cyan-100'} w-full p-8 md:p-32 lg:p-64`}>
-                        <GameCard key={index} title={element.title} image={element.image} text={element.text} gameLink={element.gameLink} />
+                    <div key={index} className={`${index % 2 ? 'bg-cyan-200' : 'bg-cyan-100'} w-full p-8 md:p-32 lg:p-64`}>
+                        <GameCard title={element.title} image={element.image} text={element.text} gameLink={element.gameLink} />
                     </div>
                 ))
             }

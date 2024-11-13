@@ -59,8 +59,8 @@ export default function Blog() {
             <h3 className='mb-32 text-center'>Blog</h3>
             {
                 mappedFeedItems && mappedFeedItems.map((element, index) => (
-                    <div className={`${index % 2 ? 'bg-rose-200' : 'bg-rose-100'} w-full p-8 md:p-32 lg:p-64`}>
-                        <PostCard key={index} creator={element.creator} title={element.title} link={element.link} pubData={element.pubDate} contentEncodedSnippet={element["content:encodedSnippet"]} categories={element.categories} image={imagesArray[index]} />
+                    <div key={index} className={`${index % 2 ? 'bg-rose-200' : 'bg-rose-100'} w-full p-8 md:p-32 lg:p-64`}>
+                        <PostCard creator={element.creator} title={element.title} link={element.link} pubData={element.pubDate} contentEncodedSnippet={element["content:encodedSnippet"]} categories={element.categories} image={imagesArray[index]} />
                     </div>
                 ))
             }
