@@ -1,11 +1,9 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react";
-import Feed from "./components/Feed";
 import Parser from "rss-parser";
 import useBlogStore from "../zustand/blogStore";
-import useMainStore from "../zustand/mainStore";
-import PostSection from "./components/PostSection";
+import PostCard from "./components/PostCard";
 
 const parser = new Parser();
 
@@ -45,12 +43,27 @@ export default function Blog() {
         setMappedFeedItems(newObject)
     }, [feed])
 
+    // Array immagini
+    const imagesArray = [
+        "/images/blog/funside.png",
+        "/images/blog/vincanta.png",
+        "/images/blog/cloudinary.png",
+        "/images/blog/responsive.png",
+        "/images/blog/trapconcaverde.png",
+        "/images/blog/advergames.png",
+    ]
+    
+
+
+
     return (
         <main className="flex flex-col items-center bg-rose-200 pt-32 lg:pt-64">
             <h3 className='mb-32 text-center'>Blog</h3>
             {
                 mappedFeedItems && mappedFeedItems.map((element, index) => (
-                    <PostSection key={index} data={element} isEven={index % 2 ? true : false} />
+                    <div className={`${index % 2 ? 'bg-rose-200' : 'bg-rose-100'} w-full p-8 md:p-32 lg:p-64`}>
+                        <PostCard key={index} creator={element.creator} title={element.title} link={element.link} pubData={element.pubDate} contentEncodedSnippet={element["content:encodedSnippet"]} categories={element.categories} image={imagesArray[index]} />
+                    </div>
                 ))
             }
         </main>
