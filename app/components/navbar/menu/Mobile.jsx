@@ -5,7 +5,7 @@ import Image from 'next/image'
 import useMainStore from '@/app/zustand/mainStore'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 function Mobile({ menuList }) {
   // Gestisco apertura e chiusura del menu
@@ -39,6 +39,7 @@ function Mobile({ menuList }) {
 
   // Gestisco chiusura del menu
   const router = useRouter();
+  const pathname = usePathname();
   const closeMenu = (link) => {
     // Overlay
     gsap.to(overlayRef.current, {
@@ -60,18 +61,24 @@ function Mobile({ menuList }) {
     setTimeout(() => {
       setBurger(false)
       if (link === "/works") {
-        window.scrollTo({
-          top: 585,
-          behavior: 'smooth'
-        })
+        if (pathname !== "/") router.push("/");
+        setTimeout(() => {
+          window.scrollTo({
+            top: 585,
+            behavior: 'smooth'
+          })
+        }, 100)
       };
       if (link === '/contact') {
-        window.scrollTo({
-          top: 3704,
-          behavior: 'smooth'
-        })
+        if (pathname !== "/") router.push("/");
+        setTimeout(() => {
+          window.scrollTo({
+            top: 3704,
+            behavior: 'smooth'
+          })
+        }, 100)
       };
-      if(link === "/blog") {
+      if (link === "/blog") {
         router.push("/blog")
       }
     }, 800)
