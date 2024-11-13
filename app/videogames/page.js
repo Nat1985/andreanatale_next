@@ -61,7 +61,7 @@ function Videogames() {
     ]
 
     return (
-        <main className="flex flex-col items-center bg-cyan-200 pt-32 lg:pt-64">
+        <main className="flex flex-col items-center bg-cyan-200 pt-32 lg:pt-64 min-h-[100vh]">
             <h3 className='mb-32 text-center'>Videogames</h3>
             {
                 videogames.map((element, index) => (
