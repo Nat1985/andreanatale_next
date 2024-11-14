@@ -7,9 +7,9 @@ import Avatar from './Avatar';
 
 function Hero() {
     const whatList = [
-        'web applications',
-        'management platforms',
-        'web sites',
+        'applicativi web',
+        'gestionali aziendali',
+        'siti web',
         'e-commerce',
         'marketplace',
         'videogames'
@@ -43,7 +43,7 @@ function Hero() {
     }, []);
     return (
         <div className="md:h-[60vh] lg:h-[80vh] flex flex-col mx-16 md:mt-16 lg:mt-32 pb-16 mt:pb-0">
-            <h5 className='mb-[-16px]'>Hello, I'm Andrea Natale</h5>
+            <h5 className='mb-[-16px]'>Ciao, mi chiamo Andrea</h5>
             <div className="flex gap-2 md:gap-8 items-center">
                 <h1 className='hidden lg:block font-medium'> Creative</h1>
                 <h2 className='hidden md:block lg:hidden font-medium'>Creative</h2>
@@ -57,7 +57,7 @@ function Hero() {
                 <div className="flex md:flex-row items-center text-xl md:text-4xl gap-2">
                     <div>
                         {/* Building custom web applications with seamless, user-friendly interfaces. */}
-                        I build
+                        Sviluppo
                     </div>
                     <div ref={scrollRef} className='h-[28px] md:h-[40px] overflow-hidden no-scrollbar'>
                         <div className='flex flex-col'>

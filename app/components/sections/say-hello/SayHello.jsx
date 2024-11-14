@@ -7,9 +7,9 @@ function SayHello() {
         <div className='w-full p-8 flex flex-col gap-8 items-center my-16 md:my-32 lg:my-64'>
             <Avatar />
             <div>
-                <h1 className='hidden lg:block font-medium'>Say Hello.</h1>
-                <h2 className='hidden md:block lg:hidden font-medium'>Say Hello.</h2>
-                <h3 className='md:hidden font-medium'>Say Hello.</h3>
+                <h1 className='hidden lg:block font-medium'>Contattami.</h1> {/* Say hello */}
+                <h2 className='hidden md:block lg:hidden font-medium'>Contattami.</h2>
+                <h3 className='md:hidden font-medium'>Contattami.</h3>
             </div>
             <div className='py-5 px-10 bg-white rounded-full flex gap-2'>
                 <a href="mailto:info@tuodominio.com" className='text-xl'>andreanatale85@proton.me</a>
