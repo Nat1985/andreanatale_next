@@ -14,7 +14,7 @@ function Works() {
             image: "/images/works/tattooswap.png",
             title: "Tattooswap",
             summary: "Marketplace per lo scambio di prodotti usati.",
-            text: "Tattooswap è un marketplace per la compravendita di attrezzatura usata per tatuatori, che che contribuisce a favorirer il riciclo e a ridurre gli sprechi all’interno dell’industria dell'estetica e tatuaggio.",
+            text: "Tattooswap è un marketplace per la compravendita di attrezzatura usata per tatuatori, che che contribuisce a favorire il riciclo e a ridurre gli sprechi all’interno dell’industria dell'estetica e tatuaggio.",
             type: "Marketplace"
         },
         {
