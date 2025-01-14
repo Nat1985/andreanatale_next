@@ -1,7 +1,6 @@
-import React from 'react'
 import Image from 'next/image'
 
-function WorkCard({data}) {
+function WorkCard({ data }) {
     return (
         <div className='flex flex-col lg:flex-row sm:items-center justify-center'>
             {/* IMAGE */}
@@ -15,7 +14,10 @@ function WorkCard({data}) {
                     <div className='ml-16 flex flex-col'>
                         <div className='text-sm text-cyan-300'>{data.summary}</div>
                         <div className='font-light'>{data.text}</div>
-                        <div>Discover</div>
+                        <div className='bg-white w-fit my-4 px-3 pxy-6 rounded-full flex gap-2 transform transition duration-300 hover:scale-110'>
+                            <a href={data.url} target="_blank" className='text-xl'>Go to</a>
+                            <Image src="/icons/arrow-up-right.svg" alt="email" width={12} height={12} />
+                        </div>
                     </div>
                 </div>
             </div>
