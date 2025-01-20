@@ -10,14 +10,14 @@ function WorkCard({ data }) {
                 <h3 className='hidden sm:block'>{data.title}</h3>
                 <h4 className='sm:hidden'>{data.title}</h4>
                 <div className='flex relative mt-4'>
-                    <div className='absolute left-[-30px] top-16 transform rotate-90 text-cyan-600'>{data.type}</div>
+                    <div className='absolute left-[-30px] top-16 transform rotate-90 text-cyan-600 w-28'>{data.type}</div>
                     <div className='ml-16 flex flex-col'>
                         <div className='text-sm text-cyan-300'>{data.summary}</div>
                         <div className='font-light'>{data.text}</div>
-                        <div className='bg-white w-fit my-4 px-3 pxy-6 rounded-full flex gap-2 transform transition duration-300 hover:scale-110'>
+                        {data.url && <div className='bg-white w-fit my-4 px-3 pxy-6 rounded-full flex gap-2 transform transition duration-300 hover:scale-110'>
                             <a href={data.url} target="_blank" className='text-xl'>Go to</a>
                             <Image src="/icons/arrow-up-right.svg" alt="email" width={12} height={12} />
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ function Works() {
             title: "Vincanta",
             summary: "Lista vini interattiva per gestire i prodotti in stock.",
             text: "Una lista vini interattiva creata per un cliente ristoratore che necessitava di un’applicazione per gestire i prodotti nella propria cantina e presentarli ai clienti al tavolo tramite tablet.",
-            type: "Applicativo web",
+            type: "Gestionale web",
             url: "https://vincanta.netlify.app"
         },
         {
@@ -26,6 +26,14 @@ function Works() {
             text: "Il cliente ha richiesto un sito vetrina con animazioni semplici e fluide che, insieme a un design minimalista, mettessero in risalto l’eleganza dei prodotti dell’azienda di produzione di marmo.",
             type: "Sito web",
             url: "https://www.borgadesign.fr"
+        },
+        {
+            image: "/images/works/quaestio.png",
+            title: "Quaestio Database",
+            summary: "Client di ricerca e organizzazione brevetti.",
+            text: "Sviluppo interfaccia front-end di un applicativo di ricerca con sistema di filtri e impaginazione di documenti di brevetto, con possibilità di organizzazione in sottocartelle ed esportazione.",
+            type: "Gestionale web",
+            url: ""
         },
         {
             image: "/images/works/ticinowild.jpg",
