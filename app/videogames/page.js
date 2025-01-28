@@ -14,13 +14,13 @@ function Videogames() {
             title: 'Il Regno del Cinema',
             image: '/images/videogames/ilregnodelcinema.png',
             text: 'Un platform 2d in pixel-art, un advergame sviluppato per la catena di multisala lombarda.',
-            gameLink: "https://www.makinarioadvergamestudio.com/games/il-regno-del-cinema"
+            gameLink: "https://games.makinariovideogamestudio.com/il-regno-del-cinema"
         },
         {
             title: 'Funside Quiz Game',
             image: '/images/videogames/funside.png',
             text: 'Un quiz game realizzato per la nota catena di fumetterie, per festeggiare il ventesimo anniversario.',
-            gameLink: "https://www.makinarioadvergamestudio.com/games/funside-quizgame/"
+            gameLink: "https://games.makinariovideogamestudio.com/funside-quizgame/"
         },
         {
             title: 'Mirko Bazzoli videogame',
@@ -32,31 +32,31 @@ function Videogames() {
             title: 'Ninja Slice',
             image: '/images/videogames/ninja.png',
             text: "Il secondo advergame sviluppato per 'Il regno del cinema'. Stavolta un endless-run in verticale!",
-            gameLink: "https://www.makinarioadvergamestudio.com/games/ninja-slice"
+            gameLink: "https://games.makinariovideogamestudio.com/ninja-slice"
         },
         {
             title: 'Blanchito MEME game',
             image: '/images/videogames/blanco.png',
             text: 'Un MEME videogame sviluppato in due sere dopo la splendida performance "floreale" di Blanco a Sanremo 2023.',
-            gameLink: "http://www.makinarioadvergamestudio.com/games/loving-roses"
+            gameLink: "http://games.makinariovideogamestudio.com/loving-roses"
         },
         {
             title: 'Storm Tattoo Shop',
             image: '/images/videogames/storm.png',
             text: 'Un advergame sviluppato per la festa di halloween per un tattoo shop.',
-            gameLink: "https://www.makinarioadvergamestudio.com/games/storm-tattoo-nightmare"
+            gameLink: "https://games.makinariovideogamestudio.com/storm-tattoo-nightmare"
         },
         {
             title: 'Hale Poke videogame',
             image: '/images/videogames/hale_poke.png',
             text: 'Un videogioco acchiappa-ingredienti per una catena di pokerie italiana.',
-            gameLink: "https://www.makinarioadvergamestudio.com/games/hale-poke"
+            gameLink: "https://games.makinariovideogamestudio.com/hale-poke"
         },
         {
             title: 'Prototipo Benacus memory game',
             image: '/images/videogames/memory_garden.png',
             text: 'Un prototipo rilassante del gioco del memory ambientato fra le piante di un vivaio.',
-            gameLink: "http://www.makinarioadvergamestudio.com/games/benacus-garden"
+            gameLink: "http://games.makinariovideogamestudio.com/benacus-garden"
         },
     ]
 
