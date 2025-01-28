@@ -5,6 +5,12 @@ function Videogames() {
 
     const videogames = [
         {
+            title: 'Flylicious',
+            image: '/images/videogames/flylicious.png',
+            text: 'Flylicious è un mobile game estremamente coinvolgente e... irritante! Adorato dalla community su Thread, si compone di numerosi livelli. A oggi siamo a quota 24 e tanti se ne aggiungeranno.',
+            gameLink: "https://games.makinariovideogamestudio.com/flylicious"
+        },
+        {
             title: 'Trap Concaverde',
             image: '/images/videogames/concaverde.png',
             text: 'Un advergame per il centro di tiro a volo Trap Concaverde di Lonato del Garda. Obiettivo: avvicinare i giovani a questo sport',
